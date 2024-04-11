@@ -1,4 +1,4 @@
-# BinaryGNN
+# Binary Graph Representation
 
 This project will generate format subgraph information, according to commit message.  
 
