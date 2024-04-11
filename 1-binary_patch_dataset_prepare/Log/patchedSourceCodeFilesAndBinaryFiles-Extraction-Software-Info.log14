@@ -1,0 +1,44 @@
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare/temp
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare/compileOption
+INFO:root:libav.libav.887d31d455915b6bde6814063384dafdee61164c
+INFO:root:/home/xu/testpatch/libav.libav.887d31d455915b6bde6814063384dafdee61164c
+INFO:root:This is the 0 vulnerability.
+INFO:root:The stat info patched commits has been extracted.
+INFO:root:git clone https://github.com/libav/libav.git
+INFO:root:git log 887d31d455915b6bde6814063384dafdee61164c -n 2 --pretty=oneline > ../commitsIdTemp.txt 
+INFO:root:c2597c5a0a08526493abb9bc9544b61a290fe20f
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:{1: [{'before': [], 'after': [196], 'function': 'static int filter_frame'}]}
+INFO:root:patch changes in 1 files.
+INFO:root:{1: {'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}}
+INFO:root:patch changes in one files.
+INFO:root:patch changes in 1 functions.
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:docker run -itd --name libav mylibav:ClangBuild /bin/bash
+INFO:root:{'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:docker stop libav
+INFO:root:docker rm libav
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:{1: [{'before': [], 'after': [196], 'function': 'static int filter_frame'}]}
+INFO:root:patch changes in 1 files.
+INFO:root:{1: {'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}}
+INFO:root:patch changes in one files.
+INFO:root:patch changes in 1 functions.
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:docker run -itd --name libav mylibav:GCCBuild /bin/bash
+INFO:root:{'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:docker stop libav
+INFO:root:docker rm libav

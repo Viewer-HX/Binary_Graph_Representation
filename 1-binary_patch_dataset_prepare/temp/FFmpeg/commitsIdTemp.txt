@@ -1,0 +1,2 @@
+85c00643b763bc62f3a15c19df44c3f1312bfe81 avformat/tls_schannel: Fix use of uninitialized variable
+49efd41c471756edd8f32e68f7e57116fdf7ecd4 lavf/udp: use ff_log_net_error to replace log_net_error

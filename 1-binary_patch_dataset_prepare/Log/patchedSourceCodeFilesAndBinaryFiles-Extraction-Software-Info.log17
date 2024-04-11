@@ -1,0 +1,176 @@
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare/temp
+INFO:root:/home/xu/BinaryGNN_code/1-binary_patch_dataset_prepare/compileOption
+INFO:root:libav.libav.887d31d455915b6bde6814063384dafdee61164c
+INFO:root:/home/xu/testpatch/libav.libav.887d31d455915b6bde6814063384dafdee61164c
+INFO:root:This is the 0 vulnerability.
+INFO:root:The stat info patched commits has been extracted.
+INFO:root:git clone https://github.com/libav/libav.git
+INFO:root:git log 887d31d455915b6bde6814063384dafdee61164c -n 2 --pretty=oneline > ../commitsIdTemp.txt 
+INFO:root:c2597c5a0a08526493abb9bc9544b61a290fe20f
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:{1: [{'before': [], 'after': [196], 'function': 'static int filter_frame'}]}
+INFO:root:patch changes in 1 files.
+INFO:root:{1: {'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}}
+INFO:root:patch changes in one files.
+INFO:root:patch changes in 1 functions.
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:docker run -itd --name libav mylibav:ClangBuild /bin/bash
+INFO:root:{'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:No compiler cmds for libavfilter/vf_gradfun.c
+INFO:root:docker stop libav
+INFO:root:docker rm libav
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:{1: [{'before': [], 'after': [196], 'function': 'static int filter_frame'}]}
+INFO:root:patch changes in 1 files.
+INFO:root:{1: {'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}}
+INFO:root:patch changes in one files.
+INFO:root:patch changes in 1 functions.
+INFO:root:{1: [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+INFO:root:docker run -itd --name libav mylibav:GCCBuild /bin/bash
+INFO:root:{'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign  -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/no
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/no
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/no/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign  -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O0 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O0
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O0
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O0/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O0 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O1 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O1
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O1
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O1/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O1 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O2
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O2
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O2/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O2 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O3 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O3
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O3
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O3/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -O3 -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Compiler cmd from version: libav---libav
+INFO:root:UnPatched Assembly filePath: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard c2597c5a0a08526493abb9bc9544b61a290fe20f'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -Os -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/Os
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/Os
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/Os/gcc_before_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:Patched Assembly file_name: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os/vf_gradfun_gcc.s
+INFO:root:docker exec -it libav bash -c 'cd /libav; git reset --hard 887d31d455915b6bde6814063384dafdee61164c'
+INFO:root:docker exec -it libav bash -c "cd /libav; gcc -I. -I. -D_ISOC99_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_POSIX_C_SOURCE=200112 -D_XOPEN_SOURCE=600 -DPIC -DHAVE_AV_CONFIG_H -DBUILDING_avfilter -std=c11 -fomit-frame-pointer -fPIC -pthread -g -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wstrict-prototypes -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -Os -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=declaration-after-statement -Werror=vla -Werror=format-security -fdiagnostics-color=auto -Wno-maybe-uninitialized  -MMD -MF libavfilter/vf_gradfun.d -MT libavfilter/vf_gradfun.o -g -S libavfilter/vf_gradfun.c -o libavfilter/vf_gradfun_gcc.s 2> /libav/assembly_error.log"
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun.c /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os
+INFO:root:Docker copy code: 0
+INFO:root:docker cp libav:/libav/libavfilter/vf_gradfun_gcc.s /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os
+INFO:root:Docker copy code: 0
+INFO:root:docker exec -it kernellibav bash -c "cd /libav; gcc -c libavfilter/vf_gradfun_gcc.s -o libavfilter/vf_gradfun.o 2> /libav/binary_error.log"
+INFO:root:Docker gcc -c error code: 256
+INFO:root:docker cp libav:/libav/binary_error.log /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os/gcc_after_binary_error.log
+INFO:root:Docker copy code: 256
+INFO:root:docker stop libav
+INFO:root:docker rm libav

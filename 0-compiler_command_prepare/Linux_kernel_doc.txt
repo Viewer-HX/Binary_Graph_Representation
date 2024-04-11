@@ -1,0 +1,272 @@
+Kernel Building Environment：
+sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
+
+
+Kernel building Instruction:
+	https://kernelnewbies.org/KernelBuild
+	https://www.kernel.org/doc/html/latest/admin-guide/README.html
+	
+
+Make command Explanation:
+
+	http://www.ha97.com/961.html
+	https://wangchujiang.com/linux-command/c/make.html
+
+	make oldconfig 在原来内核配置的基础上修改一些小地方
+	make config：遍历选择所要编译的内核特性
+	make allyesconfig：配置所有可编译的内核特性
+	make allnoconfig：并不是所有的都不编译
+	make menuconfig：这种就是打开一个文件窗口选择菜单
+	make kconfig(KDE桌面环境下，并且安装了qt开发环境)
+	make gconfig(Gnome桌面环境，并且安装gtk开发环境)
+
+Seeking Dependent files:
+	Statistic vulnerable information for each version
+		a. Compiling different Linux version in container environment; 
+		b. Seeking commit messages in different Linux version;
+		c. existing research including slim software, how to automatically seek dependent files.
+
+
+Kernel Compile & Make Process
+	(Notice!!! In Linux kernel v5.0, the source is able to correct compile, between v5.0 and v4.9-rc8 there exists some errors when making after each commits)
+	1. Firstly compile and then generate binary
+		a. Creating empty container with Ubuntu image;
+		b. Seeking all dependent files through parsing "Makefile";
+		c. Seeking CvE commits that are not covered by other commits between tags (the commit have no overlap changed functions with other commits);
+		d. Compiling patched source code files in specific tag.
+
+Kernel Introduction:
+	vmlinux 介绍， https://www.cnblogs.com/alantu2018/p/8991298.html
+	linux kernel 结构介绍，https://0xax.gitbooks.io/linux-insides/content/Misc/linux-misc-2.html
+	compile 介绍，https://lkw.readthedocs.io/en/latest/doc/02_kernel_compilation.html
+	compile 介绍，https://www.kernel.org/doc/html/latest/kbuild/makefiles.html
+
+Kernel successfully compile with clang
+	Compiling methods
+		a. https://github.com/umnsec/crix
+		b. https://github.com/ramosian-glider/clang-kernel-build
+		c. https://www.kernel.org/doc/html/latest/kbuild/llvm.html
+		d. basic knowledge https://0xax.gitbooks.io/linux-insides/content/Misc/linux-misc-2.html
+	Compiling steps:
+		a. prepare llvm: download llvm https://github.com/llvm/llvm-project.git ; switch version; build llvm
+		b. make CC=clang defconfig | allyesconfig; make CC=clang (HOSTCC=clang) v=1 or with optional parameters 'KBUILD_CFLAGS="-O0|-O2 -g -fno-inline"'
+		
+	已有错误解决方法：
+	https://www.dazhuanlan.com/2019/09/27/5d8ce238cb882/
+	https://my.oschina.net/wfy94/blog/1839295
+	
+	For Linux Kernel v5.X, clang v10.X
+	make CC=clang v=1 (less build log)
+	make CC=clang HOSTCC=clang v=1 (more build log)
+	
+	linux v5.7, 
+	
+	linux v5.6, clang 11:
+	出现错误，但继续完成编译
+	make[1]: *** [kernel/kheaders_data.tar.xz] Error 127
+	make: *** [kernel] Error 2
+	make: *** Waiting for unfinished jobs....	
+	安装新的依赖：glibc-doc, glibc-source, libelf-dev, kmod, cpio 成功执行
+	https://git.seblu.net/archlinux/linux-seblu/commit/0ece210b45a8ea1886a228b4f9a16df569e772b0
+	make CC=clang allyesconfig; make CC=clang v=1 
+		
+	linux v5.5, clang 11:
+	出现错误：
+	arch/x86/boot/compressed/Makefile:119: recipe for target 'arch/x86/boot/compressed/vmlinux' failed
+	make[2]: *** [arch/x86/boot/compressed/vmlinux] Error 1
+	make[1]: *** [arch/x86/boot/compressed/vmlinux] Error 2
+	make: *** [bzImage] Error 2
+	安装新的依赖：liblz4-tool, liblz4-dev
+	make CC=clang allyesconfig; make CC=clang v=1 
+
+	linux v5.4 clang 11
+	make CC=clang allyesconfig; make CC=clang v=1 
+
+	linux v5.3, clang 11
+	make CC=clang allyesconfig; make CC=clang v=1
+	
+	linux v5.2, clang 11
+	make CC=clang allyesconfig; make CC=clang v=1 
+	gcc 7.5	
+	
+	linux5.1, clang 11
+	出现错误：
+	make[2]: *** [arch/x86/boot/compressed/vmlinux] Error 1
+	make[1]: *** [arch/x86/boot/compressed/vmlinux] Error 2
+	make: *** [bzImage] Error 2
+	安装新的依赖：liblz4-tool, liblz4-dev
+	新错误：
+	recipe for target 'vmlinux' failed
+	make: *** [vmlinux] Error 1
+	KBUILD_CFLAGS="-std=gnu89"
+	make CC=clang allyesconfig; make CC=clang v=1
+	
+	linux v5.0 clang 11
+	make CC=clang defconfig; make CC=clang v=1 
+	make: *** [vmlinux] Error 1;
+	
+	vmlinux installing
+	https://blog.csdn.net/somexing/article/details/104060356
+	http://ddebs.ubuntu.com/pool/main/l/linux/
+	https://wiki.ubuntu.com/DebuggingProgramCrash
+	
+	make; first, and then make CC=clang v=1
+	
+	linux v4.X gcc-5
+	
+	linux v4.20.0 clang-10
+	make CC=clang allyesconfig; make CC=clang v=1
+	
+	linux v4.19.0 clang-10
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-O0 -g -fno-inline" v=1 
+	
+	linux v4.18.0 clang-10
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-O0 -g -fno-inline"  v=1
+	
+	linux v4.17.0 clang-10
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-O0 -g -fno-inline"  v=1
+	
+	linux v4.16.0 clang-10
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-O0 -g -fno-inline"  v=1
+	
+	linux v4.15.0 clang; linux v4.14.0 clang; linux v4.13.0 clang; 
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-O0 -g -fno-inline"  v=1
+	
+	-std=gnu89 --target=x86_64-linux-gnu -fno-builtin
+	
+	linux v4.12.0 clang 10.0
+	make CC=clang defconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-O0 -g -fno-inline" v=1; make CC=clang HOSTCC=clang v=1
+	make CC=clang LD=ld.lld KBUILD_CFLAGS="-O0 -g -fno-inline" v=1 -j30 > ../linuxBuildLogClang.txt
+	
+	linux v4.11.0 clang 10.0 ??
+	error : scripts/mod/devicetable-offsets.c:30:2: error: unexpected token at start of statement #KBUILD_CFLAGS="-fno-integrated-as -fno-builtin"
+	make CC=clang defconfig; make CC=clang LD=ld.lld KBUILD_CFLAGS="-fno-integrated-as" v=1 -j30 > ../linuxBuildLogClang.txt
+	
+	linux v4.10.0 clang 10.0
+	make CC=clang defconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	#make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as -fno-builtin" v=1 
+	make CC=clang allyesconfig; make CC=clang LD=ld.lld KBUILD_CFLAGS="-fno-integrated-as -fno-builtin" v=1 -j30 > ../linuxBuildLogClang.txt
+	
+	linux v4.9.0 clang 10.0
+	make CC=clang defconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.8.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.7.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.6.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.5.0 clang 10.0
+	make CC=clang defconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.4.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.3.0 clang 10.0
+	make CC=clang defconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.2.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.1.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v4.0.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1 
+	
+	linux v3.x gcc-4.8
+	linux v3.19.0 clang 10.0
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1 
+	
+	linux v3.18.0 clang 11.0 
+	error: invalid reassignment of non-absolute variable 'var_ddq_add', which is solved in llvm 11.0 22 Jun 2020 llvmorg-11.0.0-rc2
+	https://lkml.org/lkml/2020/6/22/1321
+	https://lkml.org/lkml/2020/8/17/1243
+	make CC=clang allyesconfig; make CC=clang HOSTCC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+
+	linux v3.17.0, clang 11.0
+	error: invalid operand for inline asm constraint 'i'; have been fixed, maybe cause the clang version
+	https://github.com/JuliaLang/julia/issues/14230 
+	
+	arch/x86/tools/relocs_64.o:(.bss+0x0): multiple definition of `per_cpu_load_addr'
+	arch/x86/tools/relocs_32.o:(.bss+0x0): first defined here
+	clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+	make[1]: *** [arch/x86/tools/relocs] Error 1
+	make: *** [archscripts] Error 2
+	delete "HOSTCC=clang"; then success
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v3.16.0, clang 11.0
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	
+	linux v3.15.0, clang 11.0
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as" v=1
+	make CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld EXTRA_CFLAGS='-fno-integrated-as' v=1 -j30 > ../linuxBuildLogClang.txt
+	
+	linux v3.14.0, clang 11.0
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as -O0 -g -fno-inline" v=1
+	
+	linux v3.7.0, v3.6.0, clang 11.0
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as -O0 -g -fno-inline" v=1
+	error: unsupported inline asm: input with type 'long' matching output with type 'int'
+	
+	linux v3.5.0, v3.4.0, v3.3.0, v3.2.0, v3.1.0, clang 11.0
+	make CC=clang allyesconfig; make CC=clang KBUILD_CFLAGS="-fno-integrated-as -O0 -g -fno-inline" v=1
+	error: unknown argument: '-maccumulate-outgoing-args'
+	
+	The paramter "-emit-llvm" for generating IR bitcodes.
+
+Solution for remaining kernel vulnerabilities:
+	rebuild these kernel with gcc to complement missing files. 
+	(v3.0-v3.19, v4.0-v4.12)
+	
+	kernel build errors for gcc:
+		https://askubuntu.com/questions/851433/kernel-doesnt-support-pic-mode-for-compiling
+		
+	gcc version update:
+		https://askubuntu.com/questions/1157084/fatal-error-linux-compiler-gcc7-h-no-such-file-or-directory
+		https://www.cnblogs.com/in4ight/p/6626708.html
+	
+Single file compile for Kernel
+	make CC=clang kernel/sched/core.o?
+	
+Compiling in the container
+	sudo docker exec -it <DOCKER_NAME> /bin/bash -c '<command>'
+
+
+Possible steps:
+	make headers_install
+	Static analysers:
+		checkstack      - Generate a list of stack hogs
+		namespacecheck  - Name space analysis on compiled kernel
+		versioncheck    - Sanity check on version.h usage
+		includecheck    - Check for duplicate included header files
+		export_report   - List the usages of all exported symbols
+		headers_check   - Sanity check on exported headers
+		headerdep       - Detect inclusion cycles in headers
+		coccicheck      - Check with Coccinelle.
+
+Generating IR bitcode
+	https://github.com/shamedgh/temporal-specialization/blob/master/COMPILE.md
+
+The difference between Clang and gcc
+	a. https://opensource.apple.com/source/clang/clang-23/clang/tools/clang/www/comparison.html#gcc
+	b. https://clang.llvm.org/docs/LanguageExtensions.html
+	c. https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html
+	d. https://medium.com/@alitech_2017/gcc-vs-clang-llvm-an-in-depth-comparison-of-c-c-compilers-899ede2be378
+
+GCC Optimization Option
+	https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+
+
+2. Directly download kernel binary of specific version
+	a. Directly download kernel binary;
+	b. Filtering patches indicating in the released binaries (no other commits patching same source code file);
+	c. Extracting patched and vulnerable function (statistic syntax information, sequence of basic blocks, assembly code semantics into vector (NLP)) through function-level binary searching.
+
+Reference:
+	[1] https://kernelnewbies.org/KernelBuild (kernel compile)
+	[2] https://grafana.com/ (data analysis virtualization)

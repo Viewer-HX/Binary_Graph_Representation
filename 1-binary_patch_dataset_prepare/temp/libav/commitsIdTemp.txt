@@ -1,0 +1,2 @@
+c4642788e83b0858bca449f9b6e71ddb015dfa5d time_internal: Prefix fallback versions of gmtime_r/localtime_r with ff_
+9485cce6d55baf547e92ef1f54cad117f2a38287 time_internal: Do not attempt to override *time_r() macros

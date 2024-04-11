@@ -1,0 +1,343 @@
+概述
+
+最近开始研究 binary patch，计划实现 COTS binary 中的 patch 检测。由于网上缺乏 binary 级 patch 的相关信息，则需要人工手动根据 source code patch 信息编译生成 assembly code 来进一步获取 binary patch 信息。
+
+在编译 source code patch 时，发现不同软件需要的依赖软件、版本存在差异，更有可能存在冲突，导致在同一台机器上编译多种软件存在挑战。因此，借助 container 的隔离性，为不同软件搭建隔离编译环境。
+
+本文主要记录软件编译流程，以方便查阅。
+
+Make 输出详细编译日志方式：
+
+make V=1
+
+Other suggestions here:
+
+    make VERBOSE=1 - did not work at least from my trials.
+
+    make -n - displays only logical operation, not command line being executed. E.g. CC source.cpp
+
+    make --debug=j - works as well, but might also enable multi threaded building, causing extra output.
+
+
+参考：https://stackoverflow.com/questions/5820303/how-do-i-force-make-gcc-to-show-me-the-commands
+
+预备环境
+
+首先准备Ubuntu 系统，并安装 docker container 环境以保存编译环境。docker container 的安装可参考官方文档1。
+
+编写自动化 shell 脚本，实现 OpenSSL 软件编译环境的自动化构建。
+分别使用流行编译器 gcc 和 clang 实现软件编译（指定 CC=clang 修改默认编译器）2。
+
+docker run -itd --name openssl---openssl ubuntu:latest /bin/bash
+
+docker exec -it openssl---openssl bash -c "apt update"
+
+docker exec -it openssl---openssl bash -c "apt install -y gcc clang git"
+
+docker exec -it openssl---openssl bash -c "git clone https://github.com/openssl/openssl.git"
+
+docker exec -it openssl---openssl bash -c "cd openssl; ./Configure linux-x86_64"
+
+docker exec -it openssl---openssl bash -c "cd openssl; make [CC=clang]"
+
+# docker cp openssl---openssl:/opensslBuildLogGcc.txt ~/Binary_database/SoftwareBuildLog/openssl---opensslBuildLogGcc.txt
+# docker cp openssl---openssl:/opensslBuildLogClang.txt ~/Binary_database/SoftwareBuildLog/openssl---opensslBuildLogClang.txt
+
+docker commit openssl---openssl myopenssl:Gcc[Clang]Build
+
+docker stop openssl---openssl
+
+docker rm openssl---openssl
+
+脚本执行流程：
+
+    1. 基于 ubuntu image 构建 openssl container；
+    2. 在 openssl container 中安装 openssl 编译所需依赖软件；
+    3. 在 container 中克隆、保存 openssl 源码，然后使用 gcc 或 clang 编译源码；
+    4. 保存已编译的环境于新的 image 中；
+    5. 以后需要使用时，可以运行新构造的 image，命令如下。
+    
+docker run -it --name openssl---openssl myubuntu:openssl /bin/bash
+
+
+Linux kernel
+
+同样编写自动化 shell 脚本，实现 Linux Kernel 分别针对 gcc 和 clang 编译环境的自动化构建3。这里主要针对 kernel 版本 5.0 之后，并使用 allyesconfig 以尽量保证全部模块的编译。
+
+for version after 5.0
+
+#docker run -itd --name kernel$1 mykernel:kernelClang10.0.0Env18.04 /bin/sh
+#docker run -itd --name kernel$1 mykernel:kernelClang10.0.1Env18.04 /bin/sh
+docker run -itd --name kernel$1 mykernel:kernelClang11Env18.04 /bin/bash
+#docker exec -it kernel$1 bash -c "apt install -y liblz4-dev kernel-package"
+#docker exec -it kernel$1 bash -c "apt install -y liblz4-tool lzop"
+docker exec -it kernel$1 bash -c "apt install -y glibc-doc glibc-source libelf-dev kmod cpio"
+#docker exec -it kernel$1 bash -c "cd /linux"
+#docker exec -it kernel$1 bash -c "cd /linux; git show"
+docker exec -it kernel$1 bash -c "cd /linux; git checkout $1"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] allyesconfig"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd .."
+docker exec -it kernel$1 bash -c "wc -l /linuxBuildLogGcc[Clang].txt"
+docker cp kernel$1:/linuxBuildLogGcc[Clang].txt ~/Binary_database/KernelBuildLog/linuxBuildLogGcc[Clang]$1.txt
+docker commit kernel$1 mykernel:Gcc[Clang]Build$1
+docker stop kernel$1
+dockre rm kernel$1
+
+for version after 4.0
+
+docker exec -it kernel$1 bash -c "apt-get update --fix-missing"
+docker exec -it kernel$1 bash -c "apt install -y linux-source"
+#docker exec -it kernel$1 bash -c "cd /linux"
+#docker exec -it kernel$1 bash -c "cd /linux; git show"
+docker exec -it kernel$1 bash -c "cd /linux; git checkout $1"
+docker exec -it kernel$1 bash -c "cd /linux; make distclean"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] allyesconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] defconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; yes ' '| make [CC=clang] oldconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] prepare"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] LD=ld.lld KBUILD_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogClang.txt"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld KBUILD_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] HOSTCC=clang KBUILD_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] KBUILD_CFLAGS='-fno-integrated-as -O0 -g -fno-inline' V=1  > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd .."
+docker exec -it kernel$1 bash -c "wc -l /linuxBuildLogGcc[Clang].txt"
+docker cp kernel$1:/linuxBuildLogGcc[Clang].txt ~/Binary_database/KernelBuildLog/linuxBuildLogGcc[Clang]$1.txt
+docker commit kernel$1 mykernel:Gcc[Clang]Build$1
+docker stop kernel$1
+
+for version before 4.0
+
+docker run -itd --name kernel$1 mykernel:kernelClang11LLDEnv18.04 /bin/bash
+#docker run -itd --name kernel$1 mykernel:kernelClang10.0.1Env18.04 /bin/sh
+#docker run -itd --name kernel$1 mykernel:kernelClang10.0.0Env18.04 /bin/sh
+#docker exec -it kernel$1 bash -c "apt install -y liblz4-dev kernel-package"
+#docker exec -it kernel$1 bash -c "apt install -y liblz4-tool lzop"
+#docker exec -it kernel$1 bash -c "apt install -y glibc-doc glibc-source libelf-dev kmod cpio"
+docker exec -it kernel$1 bash -c "apt-get update --fix-missing"
+docker exec -it kernel$1 bash -c "apt install -y linux-source"
+#docker exec -it kernel$1 bash -c "cd /linux"
+#docker exec -it kernel$1 bash -c "cd /linux; git show"
+docker exec -it kernel$1 bash -c "cd /linux; git checkout $1"
+docker exec -it kernel$1 bash -c "cd /linux; make distclean"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] allyesconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] defconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; yes ' '| make [CC=clang] oldconfig"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] prepare"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] HOSTCC=clang EXTRA_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] LD=ld.lld EXTRA_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld EXTRA_CFLAGS='-fno-integrated-as' V=1 -j30 > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd /linux; make [CC=clang] EXTRA_CFLAGS='-fno-integrated-as -O0 -g -fno-inline' V=1  > ../linuxBuildLogGcc[Clang].txt"
+#docker exec -it kernel$1 bash -c "cd .."
+docker exec -it kernel$1 bash -c "wc -l /linuxBuildLogGcc[Clang].txt"
+docker cp kernel$1:/linuxBuildLogGcc[Clang].txt ~/Binary_database/KernelBuildLog/linuxBuildLogGcc[Clang]$1.txt
+docker commit kernel$1 mykernel:Gcc[Clang]Build$1
+docker stop kernel$1
+
+
+
+Linux kernel 脚本执行流程和 openssl 的类似，运行新构造的 image，命令如下:
+
+docker run -it --name kernel mykernel:Gcc[Clang]Build$1 /bin/bash
+
+FFmpeg
+
+FFmpeg 是一个可以运行音频和视讯多种格式的录影、转换、流功能的开源软件，其中包含了大量音频和视频处理的库函数。
+编写自动化 shell 脚本，实现 FFmpeg 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（指定 cc=clang 修改默认编译器，注意不同软件要求参数不同）4。
+
+docker run -itd --name ffmpeg---ffmpeg ubuntu:latest /bin/bash
+
+docker exec -it ffmpeg---ffmpeg bash -c "apt-get update -qq && apt-get -y install autoconf automake build-essential cmake git-core libass-dev libfreetype6-dev libgnutls28-dev libsdl2-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev pkg-config texinfo wget yasm zlib1g-dev clang"
+  
+docker exec -it ffmpeg---ffmpeg bash -c "git clone https://github.com/FFmpeg/FFmpeg.git"
+
+docker exec -it ffmpeg---ffmpeg bash -c "cd FFmpeg; ./configure [cc=clang]"
+
+docker exec -it ffmpeg---ffmpeg bash -c "cd FFmpeg; make [cc=clang] -j30 V=1 > ../ffmpegBuildLogGcc[Clang].txt"
+
+# docker cp ffmpeg---ffmpeg:/ffmpegBuildLogGcc[Clang].txt ~/Binary_database/SoftwareBuildLog/ffmpeg---ffmpegBuildLogGcc[Clang].txt
+
+docker commit ffmpeg---ffmpeg myffmpeg:Gcc[Clang]Build
+
+docker stop ffmpeg---ffmpeg 
+
+docker rm ffmpeg---ffmpeg
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name ffmpeg---ffmpeg myffmpeg:Build /bin/bash
+
+
+ImageMagick
+
+ImageMagick 是一个用于查看，编辑位图文件以及进行图像格式转换的开源软件。
+编写自动化 shell 脚本，实现 ImageMagick 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（指定 CC=clang 修改默认编译器）5。
+
+docker run -itd --name ImageMagick---ImageMagick ubuntu:latest /bin/bash
+
+docker exec -it ImageMagick---ImageMagick bash -c "apt-get update && apt-get -y install gcc vim clang make git"
+  
+docker exec -it ImageMagick---ImageMagick bash -c "git clone https://github.com/ImageMagick/ImageMagick.git"
+
+docker exec -it ImageMagick---ImageMagick bash -c "cd /ImageMagick; ./configure [CC=clang]"
+
+docker exec -it ImageMagick---ImageMagick bash -c "cd /ImageMagick; make [CC=clang] -j30 V=1"
+
+# docker cp ImageMagick---ImageMagick:/ImageMagickBuildLogGcc[CC=clang].txt ~/Binary_database/SoftwareBuildLog/ImageMagick---ImageMagickBuildLogGcc[CC=clang].txt
+
+docker commit ImageMagick---ImageMagick myimagemagick:Gcc[Clang]Build
+
+docker stop ImageMagick---ImageMagick
+
+docker rm ImageMagick---ImageMagick
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name ImageMagick---ImageMagick myimagemagick:Build /bin/bash
+
+libav
+
+libav 是一个提供多媒体输出处理库与功能的开源软件，是 FFmpeg 项目的一个分支。
+编写自动化 shell 脚本，实现 libav 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（指定 cc=clang 修改默认编译器）6。
+
+docker run -itd --name libav---libav ubuntu:latest /bin/bash
+
+docker exec -it libav---libav bash -c "apt-get update && apt-get -y install yasm gcc vim clang make git"
+  
+docker exec -it libav---libav bash -c "git clone https://github.com/libav/libav.git"
+
+docker exec -it libav---libav bash -c "cd /libav; ./configure [cc=clang]"
+
+docker exec -it libav---libav bash -c "cd /libav; make [cc=clang] -j30 V=1"
+
+# docker cp libav---libav:/libavBuildLogGcc[Clang].txt ~/Binary_database/SoftwareBuildLog/libav---libavBuildLogGcc[Clang].txt
+
+docker commit libav---libav mylibav:Gcc[Clang]Build
+
+docker stop libav---libav
+
+docker rm libav---libav
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name libav---libav mylibav:Build /bin/bash
+
+
+php-src
+
+php-src 是一个由 C 语言编写的 php 脚本解释器。
+编写自动化 shell 脚本，实现 php-src 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（指定 cc=clang 修改默认编译器）7。
+
+docker run -it --name php---php-src ubuntu:latest /bin/bash
+
+docker exec -it php---php-src bash -c "apt-get update && apt-get -y install pkg-config build-essential autoconf bison re2c libxml2-dev libsqlite3-dev gcc vim clang make git"
+  
+docker exec -it php---php-src bash -c "git clone https://github.com/php/php-src.git"
+
+docker exec -it php---php-src bash -c "cd php-src; ./buildconf "
+
+docker exec -it php---php-src bash -c "cd php-src; ./configure --enable-debug [cc=clang]"
+
+docker exec -it php---php-src bash -c "cd php-src; make [cc=clang] -j30 V=1"
+
+# docker cp php---php-src:/phpBuildLogGcc[Clang].txt ~/Binary_database/SoftwareBuildLog/php---php-srcBuildLogGcc[Clang].txt
+
+# the compiler command is in the form of cc, instead of gcc ro clang;
+
+docker commit php---php-src myphp:Gcc[Clang]Build
+
+docker stop php---php-src 
+
+docker rm php---php-src
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name php---php-src myphp:Build /bin/bash
+
+qemu
+
+qemu 是一款开源的硬件虚拟化软件，具有高速和跨平台的特性。
+编写自动化 shell 脚本，实现 qemu 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（注：需要再 configure 阶段指定 --cc=clang，并在 make 阶段指定 cc=clang，以修改默认编译器）8。
+
+docker run -itd --name qemu---qemu ubuntu:latest /bin/bash
+
+docker exec -it qemu---qemu bash -c "apt-get update && apt-get -y install libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev ninja-build gcc vim clang make git"
+  
+docker exec -it qemu---qemu bash -c "git clone https://github.com/qemu/qemu.git"
+
+docker exec -it qemu---qemu bash -c "cd /qemu; mkdir build;"
+
+docker exec -it qemu---qemu bash -c "cd /qemu/build; ../configure --disable-werror [--cc=clang]"
+
+docker exec -it qemu---qemu bash -c "cd /qemu/build; make [cc=clang] -j30 V=1 "
+
+# docker cp qemu---qemu:/qemu/qemuBuildLogGcc[Clang].txt ~/Binary_database/SoftwareBuildLog/qemu---qemuBuildLogGcc[Clang].txt
+
+# the compiler command is in the form of cc, instead of gcc ro clang;
+
+docker commit qemu---qemu myqemu:Gcc[Clang]Build
+
+docker stop qemu---qemu
+
+docker rm qemu---qemu
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name qemu---qemu myqemu:Build /bin/bash
+
+
+wireshark
+
+wireshark 是一款开源的网络数据包分析软件，可实现数据包截取以及统计分析的功能。
+编写自动化 shell 脚本，实现 wireshark 软件编译环境的自动化构建。
+分别使用 gcc 和 clang 实现软件编译（注：需要在 cmake 阶段 指定不同编译器）9。
+
+docker run -itd --name wireshark---wireshark ubuntu:latest /bin/bash
+
+docker exec -it wireshark---wireshark bash -c "apt-get update && apt-get -y install build-essential libglib2.0-0 libglib2.0-dev libgcrypt20-dev libc-ares-dev bison flex gettext libssh-dev libpcap-dev systemd libsystemd-dev qtbase5-dev qttools5-dev qtmultimedia5-dev gcc vim clang make git cmake"
+  
+docker exec -it wireshark---wireshark bash -c "git clone https://github.com/wireshark/wireshark.git"
+
+docker exec -it wireshark---wireshark bash -c "cd /wireshark; cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ ."
+
+docker exec -it wireshark---wireshark bash -c "cd /wireshark; make -j30 VERBOSE=1"
+
+# docker cp wireshark---wireshark:/wiresharkBuildLogGcc[Clang].txt ~/Binary_database/SoftwareBuildLog/wireshark---wiresharkBuildLogGcc[Clang].txt
+
+docker commit wireshark---wireshark mywireshark:Gcc[Clang]Build
+
+docker stop wireshark---wireshark
+
+docker rm wireshark---wireshark
+
+使用新构造的编译环境的命令如下：
+
+docker run -it --name wireshark---wireshark mywireshark:Build /bin/bash
+
+
+
+1. (https://docs.docker.com/engine/install/ubuntu/)
+
+2. (https://wiki.openssl.org/index.php/Compilation_and_Installation)
+
+3.( https://www.linux.com/topic/desktop/how-compile-linux-kernel-0/)
+
+4. https://trac.ffmpeg.org/wiki/CompilationGuide ↩︎
+
+5. https://imagemagick.org/script/install-source.php ↩︎
+
+6. https://libav.org/documentation/platform.html ↩︎
+
+7. https://github.com/php/php-src ↩︎
+
+8. https://wiki.qemu.org/Hosts/Linux ↩︎
+
+9. https://www.wireshark.org/docs/wsug_html_chunked/ChBuildInstallUnixBuild.html ↩︎
+
+
+

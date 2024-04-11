@@ -1,0 +1,360 @@
+/home/xu/testpatch/libav.libav
+/home/xu/testpatch/libav.libav.887d31d455915b6bde6814063384dafdee61164c
+The analysis of 1 vulnerability: libav.
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/patch_info.txt
+{'1': {'before': 'a/libavfilter/vf_gradfun.c', 'after': 'b/libavfilter/vf_gradfun.c'}}
+{'1': [{'before': '-193,6', 'after': '+193,7', 'function': 'static int filter_frame'}]}
+Patched information:after---/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c---b/libavfilter/vf_gradfun.c
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no/vf_gradfun_gcc.s
+function id: 33
+function flag: True
+There are 166 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 18, 'instruction': 'movl\t$1, 0x18(%rsp)'}, {'instIndex': 19, 'instruction': 'movq\t(%rsp), %rax'}, {'instIndex': 20, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 21, 'instruction': 'jmp\t.L60'}, {'instIndex': 22, 'instruction': 'movl\t$0, 0x18(%rsp)'}, {'instIndex': 23, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 24, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 25, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 26, 'instruction': 'movl\t0x24(%rax), %ecx'}, {'instIndex': 27, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 28, 'instruction': 'movl\t%ecx, %esi'}, {'instIndex': 29, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 30, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 31, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 32, 'instruction': 'cmpq\t$0, 0x28(%rsp)'}, {'instIndex': 33, 'instruction': 'jne\t.L61'}, {'instIndex': 34, 'instruction': 'movq\t%rsp, %rax'}, {'instIndex': 35, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 36, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/no/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0/vf_gradfun_gcc.s
+function id: 33
+function flag: True
+There are 166 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 18, 'instruction': 'movl\t$1, 0x18(%rsp)'}, {'instIndex': 19, 'instruction': 'movq\t(%rsp), %rax'}, {'instIndex': 20, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 21, 'instruction': 'jmp\t.L60'}, {'instIndex': 22, 'instruction': 'movl\t$0, 0x18(%rsp)'}, {'instIndex': 23, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 24, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 25, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 26, 'instruction': 'movl\t0x24(%rax), %ecx'}, {'instIndex': 27, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 28, 'instruction': 'movl\t%ecx, %esi'}, {'instIndex': 29, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 30, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 31, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 32, 'instruction': 'cmpq\t$0, 0x28(%rsp)'}, {'instIndex': 33, 'instruction': 'jne\t.L61'}, {'instIndex': 34, 'instruction': 'movq\t%rsp, %rax'}, {'instIndex': 35, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 36, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O0/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1/vf_gradfun_gcc.s
+function id: 72
+function flag: True
+There are 415 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 20, 'instruction': 'movq\t0xd8(%rsp), %rax'}, {'instIndex': 21, 'instruction': 'movq\t%rax, 0x70(%rsp)'}, {'instIndex': 22, 'instruction': 'movl\t$1, 0xcc(%rsp)'}, {'instIndex': 27, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 28, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 29, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 30, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 31, 'instruction': 'movq\t%rax, 0x70(%rsp)'}, {'instIndex': 32, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 33, 'instruction': 'je\t.L75'}, {'instIndex': 44, 'instruction': 'leaq\t0xd8(%rsp), %rdi'}, {'instIndex': 45, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O1/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2/vf_gradfun_gcc.s
+function id: 69
+function flag: True
+There are 462 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 21, 'instruction': 'movq\t0xf8(%rsp), %rdx'}, {'instIndex': 22, 'instruction': 'movl\t$1, 0xcc(%rsp)'}, {'instIndex': 23, 'instruction': 'movq\t%rdx, 0x60(%rsp)'}, {'instIndex': 422, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 423, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 424, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 425, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 426, 'instruction': 'movq\t%rax, 0x60(%rsp)'}, {'instIndex': 427, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 428, 'instruction': 'je\t.L96'}, {'instIndex': 449, 'instruction': 'leaq\t0xf8(%rsp), %rdi'}, {'instIndex': 450, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O2/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3/vf_gradfun_gcc.s
+function id: 74
+function flag: True
+There are 462 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 21, 'instruction': 'movq\t0xf8(%rsp), %rdx'}, {'instIndex': 22, 'instruction': 'movl\t$1, 0xcc(%rsp)'}, {'instIndex': 23, 'instruction': 'movq\t%rdx, 0x60(%rsp)'}, {'instIndex': 422, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 423, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 424, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 425, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 426, 'instruction': 'movq\t%rax, 0x60(%rsp)'}, {'instIndex': 427, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 428, 'instruction': 'je\t.L95'}, {'instIndex': 449, 'instruction': 'leaq\t0xf8(%rsp), %rdi'}, {'instIndex': 450, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/O3/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os/vf_gradfun_gcc.s
+function id: 66
+function flag: True
+There are 377 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 20, 'instruction': 'movl\t$1, 0x44(%rsp)'}, {'instIndex': 21, 'instruction': 'movq\t0xb8(%rsp), %r12'}, {'instIndex': 22, 'instruction': 'jmp\t.L35'}, {'instIndex': 23, 'instruction': 'movl\t0x28(%r15), %edx'}, {'instIndex': 24, 'instruction': 'movl\t0x24(%r15), %esi'}, {'instIndex': 25, 'instruction': 'movq\t%r15, %rdi'}, {'instIndex': 26, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 27, 'instruction': 'movq\t%rax, %r12'}, {'instIndex': 28, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 29, 'instruction': 'jne\t.L36'}, {'instIndex': 30, 'instruction': 'leaq\t0xb8(%rsp), %rdi'}, {'instIndex': 31, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_after/Os/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/no/vf_gradfun.s
+function id: 5
+function flag: True
+There are 151 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 16, 'instruction': 'movl\t$1, 0x30(%rsp)'}, {'instIndex': 17, 'instruction': 'movq\t0x50(%rsp), %rax'}, {'instIndex': 18, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 19, 'instruction': 'jmp\t.LBB5_5'}, {'instIndex': 20, 'instruction': 'movl\t$0, 0x30(%rsp)'}, {'instIndex': 21, 'instruction': 'movq\t0x40(%rsp), %rdi'}, {'instIndex': 22, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 23, 'instruction': 'movl\t0x24(%rax), %esi'}, {'instIndex': 24, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 25, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 26, 'instruction': 'callq\tff_get_video_buffer@PLT'}, {'instIndex': 27, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 28, 'instruction': 'cmpq\t$0, 0x38(%rsp)'}, {'instIndex': 29, 'instruction': 'jne\t.LBB5_4'}, {'instIndex': 30, 'instruction': 'leaq\t0x50(%rsp), %rdi'}, {'instIndex': 31, 'instruction': 'callq\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/no/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 151 instructions in binary file.
+[4195492, 4195512, 4195546, 4195559]
+The execution time of patched subCFG information extraction via angr: 0:00:00.488076
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O0/vf_gradfun.s
+function id: 5
+function flag: True
+There are 151 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'after', 'insts_info': [{'instIndex': 16, 'instruction': 'movl\t$1, 0x30(%rsp)'}, {'instIndex': 17, 'instruction': 'movq\t0x50(%rsp), %rax'}, {'instIndex': 18, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 19, 'instruction': 'jmp\t.LBB5_5'}, {'instIndex': 20, 'instruction': 'movl\t$0, 0x30(%rsp)'}, {'instIndex': 21, 'instruction': 'movq\t0x40(%rsp), %rdi'}, {'instIndex': 22, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 23, 'instruction': 'movl\t0x24(%rax), %esi'}, {'instIndex': 24, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 25, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 26, 'instruction': 'callq\tff_get_video_buffer@PLT'}, {'instIndex': 27, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 28, 'instruction': 'cmpq\t$0, 0x38(%rsp)'}, {'instIndex': 29, 'instruction': 'jne\t.LBB5_4'}, {'instIndex': 30, 'instruction': 'leaq\t0x50(%rsp), %rdi'}, {'instIndex': 31, 'instruction': 'callq\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O0/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 151 instructions in binary file.
+[4195492, 4195512, 4195546, 4195559]
+The execution time of patched subCFG information extraction via angr: 0:00:00.498678
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O1/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 7771: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 7771: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O1/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 608 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.498754
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O1/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O2/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 7040: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 7040: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O2/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 1122 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.459405
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O2/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O3/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 7040: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 7040: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O3/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 1122 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.452812
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/O3/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/Os/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 7124: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 7124: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/Os/vf_gradfun.o
+Patched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 619 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.395179
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_after/Os/vf_gradfun.o.
+Patched information:before---/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c---a/libavfilter/vf_gradfun.c
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/no/vf_gradfun_gcc.s
+function id: 33
+function flag: True
+There are 165 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 18, 'instruction': 'movl\t$1, 0x18(%rsp)'}, {'instIndex': 19, 'instruction': 'movq\t(%rsp), %rax'}, {'instIndex': 20, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 21, 'instruction': 'jmp\t.L60'}, {'instIndex': 22, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 23, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 24, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 25, 'instruction': 'movl\t0x24(%rax), %ecx'}, {'instIndex': 26, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 27, 'instruction': 'movl\t%ecx, %esi'}, {'instIndex': 28, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 29, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 30, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 31, 'instruction': 'cmpq\t$0, 0x28(%rsp)'}, {'instIndex': 32, 'instruction': 'jne\t.L61'}, {'instIndex': 33, 'instruction': 'movq\t%rsp, %rax'}, {'instIndex': 34, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 35, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/no/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O0/vf_gradfun_gcc.s
+function id: 33
+function flag: True
+There are 165 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 18, 'instruction': 'movl\t$1, 0x18(%rsp)'}, {'instIndex': 19, 'instruction': 'movq\t(%rsp), %rax'}, {'instIndex': 20, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 21, 'instruction': 'jmp\t.L60'}, {'instIndex': 22, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 23, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 24, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 25, 'instruction': 'movl\t0x24(%rax), %ecx'}, {'instIndex': 26, 'instruction': 'movq\t0x38(%rsp), %rax'}, {'instIndex': 27, 'instruction': 'movl\t%ecx, %esi'}, {'instIndex': 28, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 29, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 30, 'instruction': 'movq\t%rax, 0x28(%rsp)'}, {'instIndex': 31, 'instruction': 'cmpq\t$0, 0x28(%rsp)'}, {'instIndex': 32, 'instruction': 'jne\t.L61'}, {'instIndex': 33, 'instruction': 'movq\t%rsp, %rax'}, {'instIndex': 34, 'instruction': 'movq\t%rax, %rdi'}, {'instIndex': 35, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O0/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O1/vf_gradfun_gcc.s
+function id: 72
+function flag: True
+There are 408 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 19, 'instruction': 'movq\t0xd8(%rsp), %rax'}, {'instIndex': 20, 'instruction': 'movq\t%rax, 0x78(%rsp)'}, {'instIndex': 25, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 26, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 27, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 28, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 29, 'instruction': 'movq\t%rax, 0x78(%rsp)'}, {'instIndex': 30, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 31, 'instruction': 'je\t.L74'}, {'instIndex': 42, 'instruction': 'leaq\t0xd8(%rsp), %rdi'}, {'instIndex': 43, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O1/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O2/vf_gradfun_gcc.s
+function id: 69
+function flag: True
+There are 454 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 20, 'instruction': 'movq\t0xf8(%rsp), %rdx'}, {'instIndex': 21, 'instruction': 'movq\t%rdx, 0x60(%rsp)'}, {'instIndex': 417, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 418, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 419, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 420, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 421, 'instruction': 'movq\t%rax, 0x60(%rsp)'}, {'instIndex': 422, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 423, 'instruction': 'je\t.L93'}, {'instIndex': 441, 'instruction': 'leaq\t0xf8(%rsp), %rdi'}, {'instIndex': 442, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O2/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O3/vf_gradfun_gcc.s
+function id: 74
+function flag: True
+There are 454 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 20, 'instruction': 'movq\t0xf8(%rsp), %rdx'}, {'instIndex': 21, 'instruction': 'movq\t%rdx, 0x60(%rsp)'}, {'instIndex': 417, 'instruction': 'movq\t0xd0(%rsp), %rdi'}, {'instIndex': 418, 'instruction': 'movl\t0x28(%rdi), %edx'}, {'instIndex': 419, 'instruction': 'movl\t0x24(%rdi), %esi'}, {'instIndex': 420, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 421, 'instruction': 'movq\t%rax, 0x60(%rsp)'}, {'instIndex': 422, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 423, 'instruction': 'je\t.L92'}, {'instIndex': 441, 'instruction': 'leaq\t0xf8(%rsp), %rdi'}, {'instIndex': 442, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/O3/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/Os/vf_gradfun_gcc.s
+function id: 66
+function flag: True
+There are 371 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 19, 'instruction': 'movq\t0xb8(%rsp), %r15'}, {'instIndex': 20, 'instruction': 'jmp\t.L35'}, {'instIndex': 21, 'instruction': 'movl\t0x28(%r12), %edx'}, {'instIndex': 22, 'instruction': 'movl\t0x24(%r12), %esi'}, {'instIndex': 23, 'instruction': 'movq\t%r12, %rdi'}, {'instIndex': 24, 'instruction': 'call\tff_get_video_buffer@PLT'}, {'instIndex': 25, 'instruction': 'movq\t%rax, %r15'}, {'instIndex': 26, 'instruction': 'testq\t%rax, %rax'}, {'instIndex': 27, 'instruction': 'jne\t.L36'}, {'instIndex': 28, 'instruction': 'leaq\t0xb8(%rsp), %rdi'}, {'instIndex': 29, 'instruction': 'call\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/gcc_before/Os/vf_gradfun.o
+Binary file does not exist.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/no/vf_gradfun.s
+function id: 5
+function flag: True
+There are 150 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 16, 'instruction': 'movl\t$1, 0x30(%rsp)'}, {'instIndex': 17, 'instruction': 'movq\t0x50(%rsp), %rax'}, {'instIndex': 18, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 19, 'instruction': 'jmp\t.LBB5_5'}, {'instIndex': 20, 'instruction': 'movq\t0x40(%rsp), %rdi'}, {'instIndex': 21, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 22, 'instruction': 'movl\t0x24(%rax), %esi'}, {'instIndex': 23, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 24, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 25, 'instruction': 'callq\tff_get_video_buffer@PLT'}, {'instIndex': 26, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 27, 'instruction': 'cmpq\t$0, 0x38(%rsp)'}, {'instIndex': 28, 'instruction': 'jne\t.LBB5_4'}, {'instIndex': 29, 'instruction': 'leaq\t0x50(%rsp), %rdi'}, {'instIndex': 30, 'instruction': 'callq\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/no/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 150 instructions in binary file.
+[4195492, 4195512, 4195538, 4195551]
+The execution time of patched subCFG information extraction via angr: 0:00:00.483542
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O0/vf_gradfun.s
+function id: 5
+function flag: True
+There are 150 instructions for function: filter_frame in intel assembly files.
+[{'modifyIndex': 1, 'line': {'after': {'start': '193', 'end': 199}, 'before': {'start': '193', 'end': 198}}}]
+[{'modifyIndex': 1, 'patched_tag': 'before', 'insts_info': [{'instIndex': 16, 'instruction': 'movl\t$1, 0x30(%rsp)'}, {'instIndex': 17, 'instruction': 'movq\t0x50(%rsp), %rax'}, {'instIndex': 18, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 19, 'instruction': 'jmp\t.LBB5_5'}, {'instIndex': 20, 'instruction': 'movq\t0x40(%rsp), %rdi'}, {'instIndex': 21, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 22, 'instruction': 'movl\t0x24(%rax), %esi'}, {'instIndex': 23, 'instruction': 'movq\t0x40(%rsp), %rax'}, {'instIndex': 24, 'instruction': 'movl\t0x28(%rax), %edx'}, {'instIndex': 25, 'instruction': 'callq\tff_get_video_buffer@PLT'}, {'instIndex': 26, 'instruction': 'movq\t%rax, 0x38(%rsp)'}, {'instIndex': 27, 'instruction': 'cmpq\t$0, 0x38(%rsp)'}, {'instIndex': 28, 'instruction': 'jne\t.LBB5_4'}, {'instIndex': 29, 'instruction': 'leaq\t0x50(%rsp), %rdi'}, {'instIndex': 30, 'instruction': 'callq\tav_frame_free@PLT'}]}]
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O0/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 150 instructions in binary file.
+[4195492, 4195512, 4195538, 4195551]
+The execution time of patched subCFG information extraction via angr: 0:00:00.485760
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O1/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 6406: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 6406: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O1/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 599 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.491926
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O1/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O2/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 5635: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 5635: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O2/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 1112 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.444880
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O2/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O3/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 5635: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 5635: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O3/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 1112 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.447506
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/O3/vf_gradfun.o.
+Patched source code file: vf_gradfun.c
+Patched function: static int filter_frame
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/Os/vf_gradfun.s
+Assembly file error information: 'utf-8' codec can't decode byte 0x9a in position 5800: invalid start byte
+Traceback (most recent call last):
+  File "extract_patched_code_snippets_and_sub_graph.py", line 470, in patched_commit_patched_tag_handle
+    extract_patched_assembly_code_from_debug_file(assembly_file,
+  File "extract_patched_code_snippets_and_sub_graph.py", line 136, in extract_patched_assembly_code_from_debug_file
+    lines = af.readlines()
+  File "/home/xu/anaconda3/envs/bingo/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9a in position 5800: invalid start byte
+
+/home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/Os/vf_gradfun.o
+Unpatched information:
+filter_frame
+Analyzing the binaries to generate subCFGs and subCGs starting from patched function ...
+The subCFGs and subCGs Analysis have been finished ...
+There are 609 instructions in binary file.
+The execution time of patched subCFG information extraction via angr: 0:00:00.394432
+Empty patched sub graph information from assembly file: /home/xu/testpatch/libav.libav/887d31d455915b6bde6814063384dafdee61164c/clang_before/Os/vf_gradfun.o.

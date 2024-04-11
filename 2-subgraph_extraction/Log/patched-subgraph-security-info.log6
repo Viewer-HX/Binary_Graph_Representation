@@ -1,0 +1,546 @@
+/home/xu/SoftwarePatch/judged/positives/libav.libav.a2d1d216291fd8c1f4a8b3bad4f0b50c084ba96d
+/home/xu/SoftwarePatch/judged/positives/libav.libav/a2d1d216291fd8c1f4a8b3bad4f0b50c084ba96d/patch_info.txt
+Patched information:a2d1d216291fd8c1f4a8b3bad4f0b50c084ba96d---/home/xu/SoftwarePatch/judged/positives/libav.libav/a2d1d216291fd8c1f4a8b3bad4f0b50c084ba96d
+/home/xu/SoftwarePatch/judged/positives/libav.libav.64e105e051ca3e5088b0db64551244482b2836b4
+/home/xu/SoftwarePatch/judged/positives/libav.libav/64e105e051ca3e5088b0db64551244482b2836b4/patch_info.txt
+Patched information:64e105e051ca3e5088b0db64551244482b2836b4---/home/xu/SoftwarePatch/judged/positives/libav.libav/64e105e051ca3e5088b0db64551244482b2836b4
+/home/xu/SoftwarePatch/judged/positives/libav.libav.2475f1a83ccf313d828b25f1769e3a37442ecf64
+/home/xu/SoftwarePatch/judged/positives/libav.libav/2475f1a83ccf313d828b25f1769e3a37442ecf64/patch_info.txt
+Patched information:2475f1a83ccf313d828b25f1769e3a37442ecf64---/home/xu/SoftwarePatch/judged/positives/libav.libav/2475f1a83ccf313d828b25f1769e3a37442ecf64
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d853e571ad5e7e12c6a68cfde390daced7d85fbb
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d853e571ad5e7e12c6a68cfde390daced7d85fbb/patch_info.txt
+Patched information:d853e571ad5e7e12c6a68cfde390daced7d85fbb---/home/xu/SoftwarePatch/judged/positives/libav.libav/d853e571ad5e7e12c6a68cfde390daced7d85fbb
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6d083dd7e9380664c971d4500c710aa9d7844c7a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6d083dd7e9380664c971d4500c710aa9d7844c7a/patch_info.txt
+Patched information:6d083dd7e9380664c971d4500c710aa9d7844c7a---/home/xu/SoftwarePatch/judged/positives/libav.libav/6d083dd7e9380664c971d4500c710aa9d7844c7a
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.c1ef7c971d0bbf117c3c80f65b5875e2e7b024b1
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/c1ef7c971d0bbf117c3c80f65b5875e2e7b024b1/patch_info.txt
+Patched information:c1ef7c971d0bbf117c3c80f65b5875e2e7b024b1---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/c1ef7c971d0bbf117c3c80f65b5875e2e7b024b1
+/home/xu/SoftwarePatch/judged/positives/libav.libav.55eda370cb6fe9e4c21539f3f90fd940fcf7a103
+/home/xu/SoftwarePatch/judged/positives/libav.libav/55eda370cb6fe9e4c21539f3f90fd940fcf7a103/patch_info.txt
+Patched information:55eda370cb6fe9e4c21539f3f90fd940fcf7a103---/home/xu/SoftwarePatch/judged/positives/libav.libav/55eda370cb6fe9e4c21539f3f90fd940fcf7a103
+/home/xu/SoftwarePatch/judged/positives/libav.libav.f7d18deb73d1dd1b27b2c7062c9a10d168a6c62a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/f7d18deb73d1dd1b27b2c7062c9a10d168a6c62a/patch_info.txt
+Patched information:f7d18deb73d1dd1b27b2c7062c9a10d168a6c62a---/home/xu/SoftwarePatch/judged/positives/libav.libav/f7d18deb73d1dd1b27b2c7062c9a10d168a6c62a
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.280b1f1ad12131defcd986676a8fc9717aaa601b
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/280b1f1ad12131defcd986676a8fc9717aaa601b/patch_info.txt
+Patched information:280b1f1ad12131defcd986676a8fc9717aaa601b---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/280b1f1ad12131defcd986676a8fc9717aaa601b
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.62f45cc27d07187b59551e4fad3db4e52ea73f2c
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/62f45cc27d07187b59551e4fad3db4e52ea73f2c/patch_info.txt
+Patched information:62f45cc27d07187b59551e4fad3db4e52ea73f2c---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/62f45cc27d07187b59551e4fad3db4e52ea73f2c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.66e6038cf1459304ed92305b8f3e61e2f45e8fc7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/66e6038cf1459304ed92305b8f3e61e2f45e8fc7/patch_info.txt
+Patched information:66e6038cf1459304ed92305b8f3e61e2f45e8fc7---/home/xu/SoftwarePatch/judged/positives/libav.libav/66e6038cf1459304ed92305b8f3e61e2f45e8fc7
+/home/xu/SoftwarePatch/judged/positives/libav.libav.cca1a4265388eed91156216cec7ed5c8c9f8016d
+/home/xu/SoftwarePatch/judged/positives/libav.libav/cca1a4265388eed91156216cec7ed5c8c9f8016d/patch_info.txt
+Patched information:cca1a4265388eed91156216cec7ed5c8c9f8016d---/home/xu/SoftwarePatch/judged/positives/libav.libav/cca1a4265388eed91156216cec7ed5c8c9f8016d
+/home/xu/SoftwarePatch/judged/positives/libav.libav.2d3601b564dabd7c234a11996ed09084b7dcfa3c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/2d3601b564dabd7c234a11996ed09084b7dcfa3c/patch_info.txt
+Patched information:2d3601b564dabd7c234a11996ed09084b7dcfa3c---/home/xu/SoftwarePatch/judged/positives/libav.libav/2d3601b564dabd7c234a11996ed09084b7dcfa3c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6872368355fd5454df87ab79c9faf3063c5189b4
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6872368355fd5454df87ab79c9faf3063c5189b4/patch_info.txt
+Patched information:6872368355fd5454df87ab79c9faf3063c5189b4---/home/xu/SoftwarePatch/judged/positives/libav.libav/6872368355fd5454df87ab79c9faf3063c5189b4
+/home/xu/SoftwarePatch/judged/positives/libav.libav.525782f33ff4be92bb27967c021fc244c92bdebc
+/home/xu/SoftwarePatch/judged/positives/libav.libav/525782f33ff4be92bb27967c021fc244c92bdebc/patch_info.txt
+Patched information:525782f33ff4be92bb27967c021fc244c92bdebc---/home/xu/SoftwarePatch/judged/positives/libav.libav/525782f33ff4be92bb27967c021fc244c92bdebc
+/home/xu/SoftwarePatch/judged/positives/libav.libav.49b19191bc0e23fea139b79b2c42969bc0c501d9
+/home/xu/SoftwarePatch/judged/positives/libav.libav/49b19191bc0e23fea139b79b2c42969bc0c501d9/patch_info.txt
+Patched information:49b19191bc0e23fea139b79b2c42969bc0c501d9---/home/xu/SoftwarePatch/judged/positives/libav.libav/49b19191bc0e23fea139b79b2c42969bc0c501d9
+/home/xu/SoftwarePatch/judged/positives/libav.libav.ce9bba5340a5fb6f38974a19af019dd6aa2da035
+/home/xu/SoftwarePatch/judged/positives/libav.libav/ce9bba5340a5fb6f38974a19af019dd6aa2da035/patch_info.txt
+Patched information:ce9bba5340a5fb6f38974a19af019dd6aa2da035---/home/xu/SoftwarePatch/judged/positives/libav.libav/ce9bba5340a5fb6f38974a19af019dd6aa2da035
+/home/xu/SoftwarePatch/judged/positives/libav.libav.8b031359589dbe4ad207f014325c3341b795b625
+/home/xu/SoftwarePatch/judged/positives/libav.libav/8b031359589dbe4ad207f014325c3341b795b625/patch_info.txt
+Patched information:8b031359589dbe4ad207f014325c3341b795b625---/home/xu/SoftwarePatch/judged/positives/libav.libav/8b031359589dbe4ad207f014325c3341b795b625
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6352c6bb63244f59072ea1fc1f6be0631c0cdd8c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6352c6bb63244f59072ea1fc1f6be0631c0cdd8c/patch_info.txt
+Patched information:6352c6bb63244f59072ea1fc1f6be0631c0cdd8c---/home/xu/SoftwarePatch/judged/positives/libav.libav/6352c6bb63244f59072ea1fc1f6be0631c0cdd8c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.9062cd354475754bdaaccc198a27e1728f47d5b7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/9062cd354475754bdaaccc198a27e1728f47d5b7/patch_info.txt
+Patched information:9062cd354475754bdaaccc198a27e1728f47d5b7---/home/xu/SoftwarePatch/judged/positives/libav.libav/9062cd354475754bdaaccc198a27e1728f47d5b7
+/home/xu/SoftwarePatch/judged/positives/libav.libav.61cb9fac47498a38dfe7623f66aa1f3696e9158c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/61cb9fac47498a38dfe7623f66aa1f3696e9158c/patch_info.txt
+Patched information:61cb9fac47498a38dfe7623f66aa1f3696e9158c---/home/xu/SoftwarePatch/judged/positives/libav.libav/61cb9fac47498a38dfe7623f66aa1f3696e9158c
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.487a73def65aa6ffedf5baf353e912fe61aa3c7c
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/487a73def65aa6ffedf5baf353e912fe61aa3c7c/patch_info.txt
+Patched information:487a73def65aa6ffedf5baf353e912fe61aa3c7c---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/487a73def65aa6ffedf5baf353e912fe61aa3c7c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c33fc0a5409d19eb04ac7135e3e2b4c77bee654f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c33fc0a5409d19eb04ac7135e3e2b4c77bee654f/patch_info.txt
+Patched information:c33fc0a5409d19eb04ac7135e3e2b4c77bee654f---/home/xu/SoftwarePatch/judged/positives/libav.libav/c33fc0a5409d19eb04ac7135e3e2b4c77bee654f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.69619a13c3fef940cba545cf0a283ff22771dd71
+/home/xu/SoftwarePatch/judged/positives/libav.libav/69619a13c3fef940cba545cf0a283ff22771dd71/patch_info.txt
+Patched information:69619a13c3fef940cba545cf0a283ff22771dd71---/home/xu/SoftwarePatch/judged/positives/libav.libav/69619a13c3fef940cba545cf0a283ff22771dd71
+/home/xu/SoftwarePatch/judged/positives/libav.libav.caf7be30b11288c498fae67be4741bfbf083d977
+/home/xu/SoftwarePatch/judged/positives/libav.libav/caf7be30b11288c498fae67be4741bfbf083d977/patch_info.txt
+Patched information:caf7be30b11288c498fae67be4741bfbf083d977---/home/xu/SoftwarePatch/judged/positives/libav.libav/caf7be30b11288c498fae67be4741bfbf083d977
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.1b62d880b5190de8c49a01837d96501cecf2a111
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1b62d880b5190de8c49a01837d96501cecf2a111/patch_info.txt
+Patched information:1b62d880b5190de8c49a01837d96501cecf2a111---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1b62d880b5190de8c49a01837d96501cecf2a111
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0345f36bbdd63f61dae07cbf9e307f8746b1227e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0345f36bbdd63f61dae07cbf9e307f8746b1227e/patch_info.txt
+Patched information:0345f36bbdd63f61dae07cbf9e307f8746b1227e---/home/xu/SoftwarePatch/judged/positives/libav.libav/0345f36bbdd63f61dae07cbf9e307f8746b1227e
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.0d94212a046e87fafea6e83e8ea2b2a58db49979
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/0d94212a046e87fafea6e83e8ea2b2a58db49979/patch_info.txt
+Patched information:0d94212a046e87fafea6e83e8ea2b2a58db49979---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/0d94212a046e87fafea6e83e8ea2b2a58db49979
+/home/xu/SoftwarePatch/judged/positives/libav.libav.33b83d89e3720aecc60b4df3d8021cbc5780dd91
+/home/xu/SoftwarePatch/judged/positives/libav.libav/33b83d89e3720aecc60b4df3d8021cbc5780dd91/patch_info.txt
+Patched information:33b83d89e3720aecc60b4df3d8021cbc5780dd91---/home/xu/SoftwarePatch/judged/positives/libav.libav/33b83d89e3720aecc60b4df3d8021cbc5780dd91
+/home/xu/SoftwarePatch/judged/positives/libav.libav.b15a9888a8f8e8cc9784ffd8d5d0307900fb78bb
+/home/xu/SoftwarePatch/judged/positives/libav.libav/b15a9888a8f8e8cc9784ffd8d5d0307900fb78bb/patch_info.txt
+Patched information:b15a9888a8f8e8cc9784ffd8d5d0307900fb78bb---/home/xu/SoftwarePatch/judged/positives/libav.libav/b15a9888a8f8e8cc9784ffd8d5d0307900fb78bb
+/home/xu/SoftwarePatch/judged/positives/libav.libav.4690e01c3aaf495c87127e5dc74aa347197dbc0b
+/home/xu/SoftwarePatch/judged/positives/libav.libav/4690e01c3aaf495c87127e5dc74aa347197dbc0b/patch_info.txt
+Patched information:4690e01c3aaf495c87127e5dc74aa347197dbc0b---/home/xu/SoftwarePatch/judged/positives/libav.libav/4690e01c3aaf495c87127e5dc74aa347197dbc0b
+/home/xu/SoftwarePatch/judged/positives/libav.libav.1381081cdb5999892d69f2ff010cf9371bfc7978
+/home/xu/SoftwarePatch/judged/positives/libav.libav/1381081cdb5999892d69f2ff010cf9371bfc7978/patch_info.txt
+Patched information:1381081cdb5999892d69f2ff010cf9371bfc7978---/home/xu/SoftwarePatch/judged/positives/libav.libav/1381081cdb5999892d69f2ff010cf9371bfc7978
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.0038ad480b7c89925af55aec4b62cc3f43375617
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/0038ad480b7c89925af55aec4b62cc3f43375617/patch_info.txt
+Patched information:0038ad480b7c89925af55aec4b62cc3f43375617---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/0038ad480b7c89925af55aec4b62cc3f43375617
+/home/xu/SoftwarePatch/judged/positives/libav.libav.31f2c0231f2294145fcc24717c0127c040dc0c48
+/home/xu/SoftwarePatch/judged/positives/libav.libav/31f2c0231f2294145fcc24717c0127c040dc0c48/patch_info.txt
+Patched information:31f2c0231f2294145fcc24717c0127c040dc0c48---/home/xu/SoftwarePatch/judged/positives/libav.libav/31f2c0231f2294145fcc24717c0127c040dc0c48
+/home/xu/SoftwarePatch/judged/positives/libav.libav.285b706b551b94e18f875ed01163926c8b98e68b
+/home/xu/SoftwarePatch/judged/positives/libav.libav/285b706b551b94e18f875ed01163926c8b98e68b/patch_info.txt
+Patched information:285b706b551b94e18f875ed01163926c8b98e68b---/home/xu/SoftwarePatch/judged/positives/libav.libav/285b706b551b94e18f875ed01163926c8b98e68b
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.ac495542a663b241a598e9bd13bf8d2d7b8720be
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/ac495542a663b241a598e9bd13bf8d2d7b8720be/patch_info.txt
+Patched information:ac495542a663b241a598e9bd13bf8d2d7b8720be---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/ac495542a663b241a598e9bd13bf8d2d7b8720be
+/home/xu/SoftwarePatch/judged/positives/libav.libav.38cef584048b90d2405fdbb8b79a731535948d27
+/home/xu/SoftwarePatch/judged/positives/libav.libav/38cef584048b90d2405fdbb8b79a731535948d27/patch_info.txt
+Patched information:38cef584048b90d2405fdbb8b79a731535948d27---/home/xu/SoftwarePatch/judged/positives/libav.libav/38cef584048b90d2405fdbb8b79a731535948d27
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.a3768e0c9b8b80fadcab06afed77a9d27ed1b6dd
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a3768e0c9b8b80fadcab06afed77a9d27ed1b6dd/patch_info.txt
+Patched information:a3768e0c9b8b80fadcab06afed77a9d27ed1b6dd---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a3768e0c9b8b80fadcab06afed77a9d27ed1b6dd
+/home/xu/SoftwarePatch/judged/positives/libav.libav.2b4e49d4281690db67073ba644ad2ffc17767cdf
+/home/xu/SoftwarePatch/judged/positives/libav.libav/2b4e49d4281690db67073ba644ad2ffc17767cdf/patch_info.txt
+Patched information:2b4e49d4281690db67073ba644ad2ffc17767cdf---/home/xu/SoftwarePatch/judged/positives/libav.libav/2b4e49d4281690db67073ba644ad2ffc17767cdf
+/home/xu/SoftwarePatch/judged/positives/libav.libav.8f618f4c048e3579b62768665c255b89bd99b89f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/8f618f4c048e3579b62768665c255b89bd99b89f/patch_info.txt
+Patched information:8f618f4c048e3579b62768665c255b89bd99b89f---/home/xu/SoftwarePatch/judged/positives/libav.libav/8f618f4c048e3579b62768665c255b89bd99b89f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.293ed23f1201d33a9510cf062213faa51ef620d4
+/home/xu/SoftwarePatch/judged/positives/libav.libav/293ed23f1201d33a9510cf062213faa51ef620d4/patch_info.txt
+Patched information:293ed23f1201d33a9510cf062213faa51ef620d4---/home/xu/SoftwarePatch/judged/positives/libav.libav/293ed23f1201d33a9510cf062213faa51ef620d4
+/home/xu/SoftwarePatch/judged/positives/libav.libav.bcc44873d949bd817fa19fad368604cf73ccee78
+/home/xu/SoftwarePatch/judged/positives/libav.libav/bcc44873d949bd817fa19fad368604cf73ccee78/patch_info.txt
+Patched information:bcc44873d949bd817fa19fad368604cf73ccee78---/home/xu/SoftwarePatch/judged/positives/libav.libav/bcc44873d949bd817fa19fad368604cf73ccee78
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.a0724ef1c9b9e2090bdd96b784f492b6a3952957
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a0724ef1c9b9e2090bdd96b784f492b6a3952957/patch_info.txt
+Patched information:a0724ef1c9b9e2090bdd96b784f492b6a3952957---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a0724ef1c9b9e2090bdd96b784f492b6a3952957
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.a7c682fb6f692c9a3868777a7ff305784714c131
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a7c682fb6f692c9a3868777a7ff305784714c131/patch_info.txt
+Patched information:a7c682fb6f692c9a3868777a7ff305784714c131---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a7c682fb6f692c9a3868777a7ff305784714c131
+/home/xu/SoftwarePatch/judged/positives/libav.libav.144f7a561d32ae9bc657a217e2b4c6dd9a0d7df9
+/home/xu/SoftwarePatch/judged/positives/libav.libav/144f7a561d32ae9bc657a217e2b4c6dd9a0d7df9/patch_info.txt
+Patched information:144f7a561d32ae9bc657a217e2b4c6dd9a0d7df9---/home/xu/SoftwarePatch/judged/positives/libav.libav/144f7a561d32ae9bc657a217e2b4c6dd9a0d7df9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl
+/home/xu/SoftwarePatch/judged/positives/libav.libav.652d81b2c2201922f0fef2bbd171299ce3798d12
+/home/xu/SoftwarePatch/judged/positives/libav.libav/652d81b2c2201922f0fef2bbd171299ce3798d12/patch_info.txt
+Patched information:652d81b2c2201922f0fef2bbd171299ce3798d12---/home/xu/SoftwarePatch/judged/positives/libav.libav/652d81b2c2201922f0fef2bbd171299ce3798d12
+/home/xu/SoftwarePatch/judged/positives/libav.libav.221402c1c88b9d12130c6f5834029b535ee0e0c5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/221402c1c88b9d12130c6f5834029b535ee0e0c5/patch_info.txt
+Patched information:221402c1c88b9d12130c6f5834029b535ee0e0c5---/home/xu/SoftwarePatch/judged/positives/libav.libav/221402c1c88b9d12130c6f5834029b535ee0e0c5
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c8562a6fda3c45612f0da168b03f268591c16c1f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c8562a6fda3c45612f0da168b03f268591c16c1f/patch_info.txt
+Patched information:c8562a6fda3c45612f0da168b03f268591c16c1f---/home/xu/SoftwarePatch/judged/positives/libav.libav/c8562a6fda3c45612f0da168b03f268591c16c1f
+/home/xu/SoftwarePatch/judged/positives/libav.libav
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.204cf9406e8f8cd1e3748e69a19e35bf0c224443
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/204cf9406e8f8cd1e3748e69a19e35bf0c224443/patch_info.txt
+Patched information:204cf9406e8f8cd1e3748e69a19e35bf0c224443---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/204cf9406e8f8cd1e3748e69a19e35bf0c224443
+/home/xu/SoftwarePatch/judged/positives/libav.libav.65cd45a88c4a657b4ae0c81b753bb0d065a4e25a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/65cd45a88c4a657b4ae0c81b753bb0d065a4e25a/patch_info.txt
+Patched information:65cd45a88c4a657b4ae0c81b753bb0d065a4e25a---/home/xu/SoftwarePatch/judged/positives/libav.libav/65cd45a88c4a657b4ae0c81b753bb0d065a4e25a
+/home/xu/SoftwarePatch/judged/positives/libav.libav.65935bc72926147b5f58a854c90cb8be164b1b53
+/home/xu/SoftwarePatch/judged/positives/libav.libav/65935bc72926147b5f58a854c90cb8be164b1b53/patch_info.txt
+Patched information:65935bc72926147b5f58a854c90cb8be164b1b53---/home/xu/SoftwarePatch/judged/positives/libav.libav/65935bc72926147b5f58a854c90cb8be164b1b53
+/home/xu/SoftwarePatch/judged/positives/libav.libav.cb372931ff3e55e47965db7b02c01df1e1b6a043
+/home/xu/SoftwarePatch/judged/positives/libav.libav/cb372931ff3e55e47965db7b02c01df1e1b6a043/patch_info.txt
+Patched information:cb372931ff3e55e47965db7b02c01df1e1b6a043---/home/xu/SoftwarePatch/judged/positives/libav.libav/cb372931ff3e55e47965db7b02c01df1e1b6a043
+/home/xu/SoftwarePatch/judged/positives/libav.libav.39f01e346cab464ef6c0d4ec58cc13b7123e60d8
+/home/xu/SoftwarePatch/judged/positives/libav.libav/39f01e346cab464ef6c0d4ec58cc13b7123e60d8/patch_info.txt
+Patched information:39f01e346cab464ef6c0d4ec58cc13b7123e60d8---/home/xu/SoftwarePatch/judged/positives/libav.libav/39f01e346cab464ef6c0d4ec58cc13b7123e60d8
+/home/xu/SoftwarePatch/judged/positives/libav.libav.bda2203d5652ceaf40e57b47c3e81f9340403ec2
+/home/xu/SoftwarePatch/judged/positives/libav.libav/bda2203d5652ceaf40e57b47c3e81f9340403ec2/patch_info.txt
+Patched information:bda2203d5652ceaf40e57b47c3e81f9340403ec2---/home/xu/SoftwarePatch/judged/positives/libav.libav/bda2203d5652ceaf40e57b47c3e81f9340403ec2
+/home/xu/SoftwarePatch/judged/positives/libav.libav.26f027fba1c5ab482fa2488fbe0fa36c8bb33b69
+/home/xu/SoftwarePatch/judged/positives/libav.libav/26f027fba1c5ab482fa2488fbe0fa36c8bb33b69/patch_info.txt
+Patched information:26f027fba1c5ab482fa2488fbe0fa36c8bb33b69---/home/xu/SoftwarePatch/judged/positives/libav.libav/26f027fba1c5ab482fa2488fbe0fa36c8bb33b69
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.abcf241114c4dc33af95288ae7f7d10916c67db0
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/abcf241114c4dc33af95288ae7f7d10916c67db0/patch_info.txt
+Patched information:abcf241114c4dc33af95288ae7f7d10916c67db0---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/abcf241114c4dc33af95288ae7f7d10916c67db0
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.3f3582139fbb259a1c3cbb0a25236500a409bf26
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/3f3582139fbb259a1c3cbb0a25236500a409bf26/patch_info.txt
+Patched information:3f3582139fbb259a1c3cbb0a25236500a409bf26---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/3f3582139fbb259a1c3cbb0a25236500a409bf26
+/home/xu/SoftwarePatch/judged/positives/libav.libav.ea6331f8bbaf3343faec6ffe77a6218a016a3af5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/ea6331f8bbaf3343faec6ffe77a6218a016a3af5/patch_info.txt
+Patched information:ea6331f8bbaf3343faec6ffe77a6218a016a3af5---/home/xu/SoftwarePatch/judged/positives/libav.libav/ea6331f8bbaf3343faec6ffe77a6218a016a3af5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.fb0a64126b8c11a6961dfa1323c3602b591af7df
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/fb0a64126b8c11a6961dfa1323c3602b591af7df/patch_info.txt
+Patched information:fb0a64126b8c11a6961dfa1323c3602b591af7df---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/fb0a64126b8c11a6961dfa1323c3602b591af7df
+/home/xu/SoftwarePatch/judged/positives/libav.libav.60583fb653dd2dc665cb4a8b9c755f23ea3cf901
+/home/xu/SoftwarePatch/judged/positives/libav.libav/60583fb653dd2dc665cb4a8b9c755f23ea3cf901/patch_info.txt
+Patched information:60583fb653dd2dc665cb4a8b9c755f23ea3cf901---/home/xu/SoftwarePatch/judged/positives/libav.libav/60583fb653dd2dc665cb4a8b9c755f23ea3cf901
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.394f7b6fcc38132b8ccff0a3253b9dd15640cfc0
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/394f7b6fcc38132b8ccff0a3253b9dd15640cfc0/patch_info.txt
+Patched information:394f7b6fcc38132b8ccff0a3253b9dd15640cfc0---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/394f7b6fcc38132b8ccff0a3253b9dd15640cfc0
+/home/xu/SoftwarePatch/judged/positives/graph
+/home/xu/SoftwarePatch/judged/positives/libav.libav.620f88a0b94a651c6cc912b1fb32d308762d59b5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/620f88a0b94a651c6cc912b1fb32d308762d59b5/patch_info.txt
+Patched information:620f88a0b94a651c6cc912b1fb32d308762d59b5---/home/xu/SoftwarePatch/judged/positives/libav.libav/620f88a0b94a651c6cc912b1fb32d308762d59b5
+/home/xu/SoftwarePatch/judged/positives/libav.libav.5c32755570a155779cbad79cc7de50d9eca5d4c7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/5c32755570a155779cbad79cc7de50d9eca5d4c7/patch_info.txt
+Patched information:5c32755570a155779cbad79cc7de50d9eca5d4c7---/home/xu/SoftwarePatch/judged/positives/libav.libav/5c32755570a155779cbad79cc7de50d9eca5d4c7
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.1d2932de4cefcc200f175863a42c311916269981
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1d2932de4cefcc200f175863a42c311916269981/patch_info.txt
+Patched information:1d2932de4cefcc200f175863a42c311916269981---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1d2932de4cefcc200f175863a42c311916269981
+/home/xu/SoftwarePatch/judged/positives/libav.libav.2c2b2c0ac2683319eef062afb942bffd8d1760dd
+/home/xu/SoftwarePatch/judged/positives/libav.libav/2c2b2c0ac2683319eef062afb942bffd8d1760dd/patch_info.txt
+Patched information:2c2b2c0ac2683319eef062afb942bffd8d1760dd---/home/xu/SoftwarePatch/judged/positives/libav.libav/2c2b2c0ac2683319eef062afb942bffd8d1760dd
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.eeab356c298248108b82157ef51172ba040646f7
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/eeab356c298248108b82157ef51172ba040646f7/patch_info.txt
+Patched information:eeab356c298248108b82157ef51172ba040646f7---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/eeab356c298248108b82157ef51172ba040646f7
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d002fce24a7206e95f9492031f45adc35711e183
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d002fce24a7206e95f9492031f45adc35711e183/patch_info.txt
+Patched information:d002fce24a7206e95f9492031f45adc35711e183---/home/xu/SoftwarePatch/judged/positives/libav.libav/d002fce24a7206e95f9492031f45adc35711e183
+/home/xu/SoftwarePatch/judged/positives/libav.libav.ac9d159015a88aa2721b271875d18482f713f354
+/home/xu/SoftwarePatch/judged/positives/libav.libav/ac9d159015a88aa2721b271875d18482f713f354/patch_info.txt
+Patched information:ac9d159015a88aa2721b271875d18482f713f354---/home/xu/SoftwarePatch/judged/positives/libav.libav/ac9d159015a88aa2721b271875d18482f713f354
+/home/xu/SoftwarePatch/judged/positives/libav.libav.eb2f391018facf1e31e88800f3109b382da3f59c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/eb2f391018facf1e31e88800f3109b382da3f59c/patch_info.txt
+Patched information:eb2f391018facf1e31e88800f3109b382da3f59c---/home/xu/SoftwarePatch/judged/positives/libav.libav/eb2f391018facf1e31e88800f3109b382da3f59c
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.f3e67ac1bc9f27f24d2deae0fe97142988ef6bff
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f3e67ac1bc9f27f24d2deae0fe97142988ef6bff/patch_info.txt
+Patched information:f3e67ac1bc9f27f24d2deae0fe97142988ef6bff---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f3e67ac1bc9f27f24d2deae0fe97142988ef6bff
+/home/xu/SoftwarePatch/judged/positives/libav.libav.266f241193b2fa8c99bb8b1f007c66bedd3b7d97
+/home/xu/SoftwarePatch/judged/positives/libav.libav/266f241193b2fa8c99bb8b1f007c66bedd3b7d97/patch_info.txt
+Patched information:266f241193b2fa8c99bb8b1f007c66bedd3b7d97---/home/xu/SoftwarePatch/judged/positives/libav.libav/266f241193b2fa8c99bb8b1f007c66bedd3b7d97
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.d1247df266130561c9f1ab46a905ab04888ef6d9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/d1247df266130561c9f1ab46a905ab04888ef6d9/patch_info.txt
+Patched information:d1247df266130561c9f1ab46a905ab04888ef6d9---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/d1247df266130561c9f1ab46a905ab04888ef6d9
+/home/xu/SoftwarePatch/judged/positives/libav.libav.7d09a993d14c420ce53070312e77a224dbb4bc99
+/home/xu/SoftwarePatch/judged/positives/libav.libav/7d09a993d14c420ce53070312e77a224dbb4bc99/patch_info.txt
+Patched information:7d09a993d14c420ce53070312e77a224dbb4bc99---/home/xu/SoftwarePatch/judged/positives/libav.libav/7d09a993d14c420ce53070312e77a224dbb4bc99
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.4cfa4ae820c24462c916a43d36d5daaeaf85345e
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/4cfa4ae820c24462c916a43d36d5daaeaf85345e/patch_info.txt
+Patched information:4cfa4ae820c24462c916a43d36d5daaeaf85345e---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/4cfa4ae820c24462c916a43d36d5daaeaf85345e
+/home/xu/SoftwarePatch/judged/positives/libav.libav.8cc72ce5a0d8ab6bc88d28cf55cd62674240121d
+/home/xu/SoftwarePatch/judged/positives/libav.libav/8cc72ce5a0d8ab6bc88d28cf55cd62674240121d/patch_info.txt
+Patched information:8cc72ce5a0d8ab6bc88d28cf55cd62674240121d---/home/xu/SoftwarePatch/judged/positives/libav.libav/8cc72ce5a0d8ab6bc88d28cf55cd62674240121d
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6bdae41d3ef74a0865e8f87896e649f93b2f39bd
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6bdae41d3ef74a0865e8f87896e649f93b2f39bd/patch_info.txt
+Patched information:6bdae41d3ef74a0865e8f87896e649f93b2f39bd---/home/xu/SoftwarePatch/judged/positives/libav.libav/6bdae41d3ef74a0865e8f87896e649f93b2f39bd
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c10da30d8426a1f681d99a780b6e311f7fb4e5c5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c10da30d8426a1f681d99a780b6e311f7fb4e5c5/patch_info.txt
+Patched information:c10da30d8426a1f681d99a780b6e311f7fb4e5c5---/home/xu/SoftwarePatch/judged/positives/libav.libav/c10da30d8426a1f681d99a780b6e311f7fb4e5c5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.b1a08ac71f87ff5fb14a115879e6bcc74f85f08f
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/b1a08ac71f87ff5fb14a115879e6bcc74f85f08f/patch_info.txt
+Patched information:b1a08ac71f87ff5fb14a115879e6bcc74f85f08f---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/b1a08ac71f87ff5fb14a115879e6bcc74f85f08f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.420d1df2e2a857eae45fa947e16eae7494793d57
+/home/xu/SoftwarePatch/judged/positives/libav.libav/420d1df2e2a857eae45fa947e16eae7494793d57/patch_info.txt
+Patched information:420d1df2e2a857eae45fa947e16eae7494793d57---/home/xu/SoftwarePatch/judged/positives/libav.libav/420d1df2e2a857eae45fa947e16eae7494793d57
+/home/xu/SoftwarePatch/judged/positives/libav.libav.df8aa4598c7cc1c2f863f6fc6b2d4b3e6dc7345e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/df8aa4598c7cc1c2f863f6fc6b2d4b3e6dc7345e/patch_info.txt
+Patched information:df8aa4598c7cc1c2f863f6fc6b2d4b3e6dc7345e---/home/xu/SoftwarePatch/judged/positives/libav.libav/df8aa4598c7cc1c2f863f6fc6b2d4b3e6dc7345e
+/home/xu/SoftwarePatch/judged/positives/libav.libav.f48fbf2eb5ba7015c65b31c266edf399dd6a82b1
+/home/xu/SoftwarePatch/judged/positives/libav.libav/f48fbf2eb5ba7015c65b31c266edf399dd6a82b1/patch_info.txt
+Patched information:f48fbf2eb5ba7015c65b31c266edf399dd6a82b1---/home/xu/SoftwarePatch/judged/positives/libav.libav/f48fbf2eb5ba7015c65b31c266edf399dd6a82b1
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d719981273bc779c7d1e879d88404fd867f93a0e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d719981273bc779c7d1e879d88404fd867f93a0e/patch_info.txt
+Patched information:d719981273bc779c7d1e879d88404fd867f93a0e---/home/xu/SoftwarePatch/judged/positives/libav.libav/d719981273bc779c7d1e879d88404fd867f93a0e
+/home/xu/SoftwarePatch/judged/positives/libav.libav.1c02a9732aa2e5ec0eaf83e65044704af05e8400
+/home/xu/SoftwarePatch/judged/positives/libav.libav/1c02a9732aa2e5ec0eaf83e65044704af05e8400/patch_info.txt
+Patched information:1c02a9732aa2e5ec0eaf83e65044704af05e8400---/home/xu/SoftwarePatch/judged/positives/libav.libav/1c02a9732aa2e5ec0eaf83e65044704af05e8400
+/home/xu/SoftwarePatch/judged/positives/libav.libav.1302ccc1a771d6e713a28fbbf70fc6cd6ae93b07
+/home/xu/SoftwarePatch/judged/positives/libav.libav/1302ccc1a771d6e713a28fbbf70fc6cd6ae93b07/patch_info.txt
+Patched information:1302ccc1a771d6e713a28fbbf70fc6cd6ae93b07---/home/xu/SoftwarePatch/judged/positives/libav.libav/1302ccc1a771d6e713a28fbbf70fc6cd6ae93b07
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d8b33a99897f1faa8036fbdb6a6d48af9c10730f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d8b33a99897f1faa8036fbdb6a6d48af9c10730f/patch_info.txt
+Patched information:d8b33a99897f1faa8036fbdb6a6d48af9c10730f---/home/xu/SoftwarePatch/judged/positives/libav.libav/d8b33a99897f1faa8036fbdb6a6d48af9c10730f
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.4c78ba5918daf7965759a720687c58d2ebb0eb1f
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/4c78ba5918daf7965759a720687c58d2ebb0eb1f/patch_info.txt
+Patched information:4c78ba5918daf7965759a720687c58d2ebb0eb1f---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/4c78ba5918daf7965759a720687c58d2ebb0eb1f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.4795362660a526a38a7a60f06826bce97a092b59
+/home/xu/SoftwarePatch/judged/positives/libav.libav/4795362660a526a38a7a60f06826bce97a092b59/patch_info.txt
+Patched information:4795362660a526a38a7a60f06826bce97a092b59---/home/xu/SoftwarePatch/judged/positives/libav.libav/4795362660a526a38a7a60f06826bce97a092b59
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.563c05e2dc77221c4aad740c3b89fc21c84652be
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/563c05e2dc77221c4aad740c3b89fc21c84652be/patch_info.txt
+Patched information:563c05e2dc77221c4aad740c3b89fc21c84652be---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/563c05e2dc77221c4aad740c3b89fc21c84652be
+/home/xu/SoftwarePatch/judged/positives/libav.libav.916ff02261f79e759d996c76670958276276bf2a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/916ff02261f79e759d996c76670958276276bf2a/patch_info.txt
+Patched information:916ff02261f79e759d996c76670958276276bf2a---/home/xu/SoftwarePatch/judged/positives/libav.libav/916ff02261f79e759d996c76670958276276bf2a
+/home/xu/SoftwarePatch/judged/positives/libav.libav.8b6e0aec9fb07b0d1286e3ff5d858e22d09dc83c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/8b6e0aec9fb07b0d1286e3ff5d858e22d09dc83c/patch_info.txt
+Patched information:8b6e0aec9fb07b0d1286e3ff5d858e22d09dc83c---/home/xu/SoftwarePatch/judged/positives/libav.libav/8b6e0aec9fb07b0d1286e3ff5d858e22d09dc83c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.56edbd818a07953a257797cfd26afb9c0feb603f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/56edbd818a07953a257797cfd26afb9c0feb603f/patch_info.txt
+Patched information:56edbd818a07953a257797cfd26afb9c0feb603f---/home/xu/SoftwarePatch/judged/positives/libav.libav/56edbd818a07953a257797cfd26afb9c0feb603f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d371c3c2e2830d9783465ecfe1ab7d93351083b7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d371c3c2e2830d9783465ecfe1ab7d93351083b7/patch_info.txt
+Patched information:d371c3c2e2830d9783465ecfe1ab7d93351083b7---/home/xu/SoftwarePatch/judged/positives/libav.libav/d371c3c2e2830d9783465ecfe1ab7d93351083b7
+/home/xu/SoftwarePatch/judged/positives/libav.libav.45838561f2f14339acdf53ffa3adbfe8e6db7514
+/home/xu/SoftwarePatch/judged/positives/libav.libav/45838561f2f14339acdf53ffa3adbfe8e6db7514/patch_info.txt
+Patched information:45838561f2f14339acdf53ffa3adbfe8e6db7514---/home/xu/SoftwarePatch/judged/positives/libav.libav/45838561f2f14339acdf53ffa3adbfe8e6db7514
+/home/xu/SoftwarePatch/judged/positives/libav.libav.ef12ec23fa03e520bffef34ec2eba2ac0572fb27
+/home/xu/SoftwarePatch/judged/positives/libav.libav/ef12ec23fa03e520bffef34ec2eba2ac0572fb27/patch_info.txt
+Patched information:ef12ec23fa03e520bffef34ec2eba2ac0572fb27---/home/xu/SoftwarePatch/judged/positives/libav.libav/ef12ec23fa03e520bffef34ec2eba2ac0572fb27
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c74f1f47b29dea6f4b5766a8d5a66bfeca35f9c3
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c74f1f47b29dea6f4b5766a8d5a66bfeca35f9c3/patch_info.txt
+Patched information:c74f1f47b29dea6f4b5766a8d5a66bfeca35f9c3---/home/xu/SoftwarePatch/judged/positives/libav.libav/c74f1f47b29dea6f4b5766a8d5a66bfeca35f9c3
+/home/xu/SoftwarePatch/judged/positives/libav.libav.ffaa816ee3d4654b3082b90f5e02d5d71fae5cfb
+/home/xu/SoftwarePatch/judged/positives/libav.libav/ffaa816ee3d4654b3082b90f5e02d5d71fae5cfb/patch_info.txt
+Patched information:ffaa816ee3d4654b3082b90f5e02d5d71fae5cfb---/home/xu/SoftwarePatch/judged/positives/libav.libav/ffaa816ee3d4654b3082b90f5e02d5d71fae5cfb
+/home/xu/SoftwarePatch/judged/positives/libav.libav.e3bbb5910f5996c8640a65d0b1034b7a5463438f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/e3bbb5910f5996c8640a65d0b1034b7a5463438f/patch_info.txt
+Patched information:e3bbb5910f5996c8640a65d0b1034b7a5463438f---/home/xu/SoftwarePatch/judged/positives/libav.libav/e3bbb5910f5996c8640a65d0b1034b7a5463438f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.616fd4fe5e2985f31e2ae1aee0558e73390437a0
+/home/xu/SoftwarePatch/judged/positives/libav.libav/616fd4fe5e2985f31e2ae1aee0558e73390437a0/patch_info.txt
+Patched information:616fd4fe5e2985f31e2ae1aee0558e73390437a0---/home/xu/SoftwarePatch/judged/positives/libav.libav/616fd4fe5e2985f31e2ae1aee0558e73390437a0
+/home/xu/SoftwarePatch/judged/positives/libav.libav.5b0ad91b996506632708dcefc22d2835d04a4dba
+/home/xu/SoftwarePatch/judged/positives/libav.libav/5b0ad91b996506632708dcefc22d2835d04a4dba/patch_info.txt
+Patched information:5b0ad91b996506632708dcefc22d2835d04a4dba---/home/xu/SoftwarePatch/judged/positives/libav.libav/5b0ad91b996506632708dcefc22d2835d04a4dba
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d10361b65856982fe17032590f490d494f1a01e4
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d10361b65856982fe17032590f490d494f1a01e4/patch_info.txt
+Patched information:d10361b65856982fe17032590f490d494f1a01e4---/home/xu/SoftwarePatch/judged/positives/libav.libav/d10361b65856982fe17032590f490d494f1a01e4
+/home/xu/SoftwarePatch/judged/positives/libav.libav.22aed77687f86b6b9efb9b0fdf4b26130a858c6d
+/home/xu/SoftwarePatch/judged/positives/libav.libav/22aed77687f86b6b9efb9b0fdf4b26130a858c6d/patch_info.txt
+Patched information:22aed77687f86b6b9efb9b0fdf4b26130a858c6d---/home/xu/SoftwarePatch/judged/positives/libav.libav/22aed77687f86b6b9efb9b0fdf4b26130a858c6d
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c9aa4cfdb12dd3cff1195cb20947b7d43897eed7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c9aa4cfdb12dd3cff1195cb20947b7d43897eed7/patch_info.txt
+Patched information:c9aa4cfdb12dd3cff1195cb20947b7d43897eed7---/home/xu/SoftwarePatch/judged/positives/libav.libav/c9aa4cfdb12dd3cff1195cb20947b7d43897eed7
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.752837e0664e990b5edf6f0b69e1b4612efadce0
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/752837e0664e990b5edf6f0b69e1b4612efadce0/patch_info.txt
+Patched information:752837e0664e990b5edf6f0b69e1b4612efadce0---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/752837e0664e990b5edf6f0b69e1b4612efadce0
+/home/xu/SoftwarePatch/judged/positives/libav.libav.01aa1937cf5393e2addb53c723ec6ed94ac7046c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/01aa1937cf5393e2addb53c723ec6ed94ac7046c/patch_info.txt
+Patched information:01aa1937cf5393e2addb53c723ec6ed94ac7046c---/home/xu/SoftwarePatch/judged/positives/libav.libav/01aa1937cf5393e2addb53c723ec6ed94ac7046c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0d2caa37c53bb8b479840572cb4dede2e2b30e8e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0d2caa37c53bb8b479840572cb4dede2e2b30e8e/patch_info.txt
+Patched information:0d2caa37c53bb8b479840572cb4dede2e2b30e8e---/home/xu/SoftwarePatch/judged/positives/libav.libav/0d2caa37c53bb8b479840572cb4dede2e2b30e8e
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.18096abb2939fb7d2cf24842310649908dc283ac
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/18096abb2939fb7d2cf24842310649908dc283ac/patch_info.txt
+Patched information:18096abb2939fb7d2cf24842310649908dc283ac---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/18096abb2939fb7d2cf24842310649908dc283ac
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.b8f1c116a357285ccb4905cd88c83f5076bafb52
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/b8f1c116a357285ccb4905cd88c83f5076bafb52/patch_info.txt
+Patched information:b8f1c116a357285ccb4905cd88c83f5076bafb52---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/b8f1c116a357285ccb4905cd88c83f5076bafb52
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.5deea1c0159f33549914f5e9fbf7984ecddebabc
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/5deea1c0159f33549914f5e9fbf7984ecddebabc/patch_info.txt
+Patched information:5deea1c0159f33549914f5e9fbf7984ecddebabc---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/5deea1c0159f33549914f5e9fbf7984ecddebabc
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.248385c606620b29ecc96ca9d3603463f879652b
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/248385c606620b29ecc96ca9d3603463f879652b/patch_info.txt
+Patched information:248385c606620b29ecc96ca9d3603463f879652b---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/248385c606620b29ecc96ca9d3603463f879652b
+/home/xu/SoftwarePatch/judged/positives/libav.libav.4fd56f842cbaecf74df94c38f9c10452342f436a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/4fd56f842cbaecf74df94c38f9c10452342f436a/patch_info.txt
+Patched information:4fd56f842cbaecf74df94c38f9c10452342f436a---/home/xu/SoftwarePatch/judged/positives/libav.libav/4fd56f842cbaecf74df94c38f9c10452342f436a
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.aa9fb57b99d02bf9ec7918370b79c1a61b8bfc48
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/aa9fb57b99d02bf9ec7918370b79c1a61b8bfc48/patch_info.txt
+Patched information:aa9fb57b99d02bf9ec7918370b79c1a61b8bfc48---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/aa9fb57b99d02bf9ec7918370b79c1a61b8bfc48
+/home/xu/SoftwarePatch/judged/positives/libav.libav.f23938f5b799e8859693aec1ce55ef04490c6aab
+/home/xu/SoftwarePatch/judged/positives/libav.libav/f23938f5b799e8859693aec1ce55ef04490c6aab/patch_info.txt
+Patched information:f23938f5b799e8859693aec1ce55ef04490c6aab---/home/xu/SoftwarePatch/judged/positives/libav.libav/f23938f5b799e8859693aec1ce55ef04490c6aab
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.73b61c7e14115ae98c174bfdd7c7733d6cc7e909
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/73b61c7e14115ae98c174bfdd7c7733d6cc7e909/patch_info.txt
+Patched information:73b61c7e14115ae98c174bfdd7c7733d6cc7e909---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/73b61c7e14115ae98c174bfdd7c7733d6cc7e909
+/home/xu/SoftwarePatch/judged/positives/libav.libav.7f09791d28c82c9169d1612a6192851837341ca9
+/home/xu/SoftwarePatch/judged/positives/libav.libav/7f09791d28c82c9169d1612a6192851837341ca9/patch_info.txt
+Patched information:7f09791d28c82c9169d1612a6192851837341ca9---/home/xu/SoftwarePatch/judged/positives/libav.libav/7f09791d28c82c9169d1612a6192851837341ca9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.1d4e879106676c68d6eb23319bfa412c5431ce53
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1d4e879106676c68d6eb23319bfa412c5431ce53/patch_info.txt
+Patched information:1d4e879106676c68d6eb23319bfa412c5431ce53---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/1d4e879106676c68d6eb23319bfa412c5431ce53
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.216ad9ef58853e30b005446d26326a99bfb2fea5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/216ad9ef58853e30b005446d26326a99bfb2fea5/patch_info.txt
+Patched information:216ad9ef58853e30b005446d26326a99bfb2fea5---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/216ad9ef58853e30b005446d26326a99bfb2fea5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.f418f8c17c5649eb5551e151a5da4e3d1f787947
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f418f8c17c5649eb5551e151a5da4e3d1f787947/patch_info.txt
+Patched information:f418f8c17c5649eb5551e151a5da4e3d1f787947---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f418f8c17c5649eb5551e151a5da4e3d1f787947
+/home/xu/SoftwarePatch/judged/positives/libav.libav.5b220e1e19c17b202d83d9be0868d152109ae8f0
+/home/xu/SoftwarePatch/judged/positives/libav.libav/5b220e1e19c17b202d83d9be0868d152109ae8f0/patch_info.txt
+Patched information:5b220e1e19c17b202d83d9be0868d152109ae8f0---/home/xu/SoftwarePatch/judged/positives/libav.libav/5b220e1e19c17b202d83d9be0868d152109ae8f0
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0ac8ff618c5e6d878c547a8877e714ed728950ce
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0ac8ff618c5e6d878c547a8877e714ed728950ce/patch_info.txt
+Patched information:0ac8ff618c5e6d878c547a8877e714ed728950ce---/home/xu/SoftwarePatch/judged/positives/libav.libav/0ac8ff618c5e6d878c547a8877e714ed728950ce
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.fb0bc2b273bcc2d5401dd883fe869af4fc74bb21
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/fb0bc2b273bcc2d5401dd883fe869af4fc74bb21/patch_info.txt
+Patched information:fb0bc2b273bcc2d5401dd883fe869af4fc74bb21---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/fb0bc2b273bcc2d5401dd883fe869af4fc74bb21
+/home/xu/SoftwarePatch/judged/positives/libav.libav.3ca14aa5964ea5d11f7a15f9fff17924d6096d44
+/home/xu/SoftwarePatch/judged/positives/libav.libav/3ca14aa5964ea5d11f7a15f9fff17924d6096d44/patch_info.txt
+Patched information:3ca14aa5964ea5d11f7a15f9fff17924d6096d44---/home/xu/SoftwarePatch/judged/positives/libav.libav/3ca14aa5964ea5d11f7a15f9fff17924d6096d44
+/home/xu/SoftwarePatch/judged/positives/libav.libav.58b68e4fdea22e22178e237bda950b09cc6f363a
+/home/xu/SoftwarePatch/judged/positives/libav.libav/58b68e4fdea22e22178e237bda950b09cc6f363a/patch_info.txt
+Patched information:58b68e4fdea22e22178e237bda950b09cc6f363a---/home/xu/SoftwarePatch/judged/positives/libav.libav/58b68e4fdea22e22178e237bda950b09cc6f363a
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d2752a0ddf176916c375c8e3c4a7a6e9d22164ee
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d2752a0ddf176916c375c8e3c4a7a6e9d22164ee/patch_info.txt
+Patched information:d2752a0ddf176916c375c8e3c4a7a6e9d22164ee---/home/xu/SoftwarePatch/judged/positives/libav.libav/d2752a0ddf176916c375c8e3c4a7a6e9d22164ee
+/home/xu/SoftwarePatch/judged/positives/libav.libav.64fbf5e263a0698c6cf6e0580feebe9a6f502ae5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/64fbf5e263a0698c6cf6e0580feebe9a6f502ae5/patch_info.txt
+Patched information:64fbf5e263a0698c6cf6e0580feebe9a6f502ae5---/home/xu/SoftwarePatch/judged/positives/libav.libav/64fbf5e263a0698c6cf6e0580feebe9a6f502ae5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.9561e2a169f499f8346ffdd7541bc4e3d81d6711
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/9561e2a169f499f8346ffdd7541bc4e3d81d6711/patch_info.txt
+Patched information:9561e2a169f499f8346ffdd7541bc4e3d81d6711---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/9561e2a169f499f8346ffdd7541bc4e3d81d6711
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.7928ee4d685b727619555bc1ec0aee805f6fc8c4
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/7928ee4d685b727619555bc1ec0aee805f6fc8c4/patch_info.txt
+Patched information:7928ee4d685b727619555bc1ec0aee805f6fc8c4---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/7928ee4d685b727619555bc1ec0aee805f6fc8c4
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.d16a2c1931534cfc798a15c255e17180844d2ceb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/d16a2c1931534cfc798a15c255e17180844d2ceb/patch_info.txt
+Patched information:d16a2c1931534cfc798a15c255e17180844d2ceb---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/d16a2c1931534cfc798a15c255e17180844d2ceb
+/home/xu/SoftwarePatch/judged/positives/libav.libav.b02316146b35cd03715d166acb35d88f33eac990
+/home/xu/SoftwarePatch/judged/positives/libav.libav/b02316146b35cd03715d166acb35d88f33eac990/patch_info.txt
+Patched information:b02316146b35cd03715d166acb35d88f33eac990---/home/xu/SoftwarePatch/judged/positives/libav.libav/b02316146b35cd03715d166acb35d88f33eac990
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.db82b8f9bd432a59aea8e1014694e15fc457c2bb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/db82b8f9bd432a59aea8e1014694e15fc457c2bb/patch_info.txt
+Patched information:db82b8f9bd432a59aea8e1014694e15fc457c2bb---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/db82b8f9bd432a59aea8e1014694e15fc457c2bb
+/home/xu/SoftwarePatch/judged/positives/libav.libav.a8d02f2bc90e8d963f1a95f7a75de520259bb2d2
+/home/xu/SoftwarePatch/judged/positives/libav.libav/a8d02f2bc90e8d963f1a95f7a75de520259bb2d2/patch_info.txt
+Patched information:a8d02f2bc90e8d963f1a95f7a75de520259bb2d2---/home/xu/SoftwarePatch/judged/positives/libav.libav/a8d02f2bc90e8d963f1a95f7a75de520259bb2d2
+/home/xu/SoftwarePatch/judged/positives/libav.libav.25a6666f6c07c6ac8449a63d7fbce0dfd29c54cd
+/home/xu/SoftwarePatch/judged/positives/libav.libav/25a6666f6c07c6ac8449a63d7fbce0dfd29c54cd/patch_info.txt
+Patched information:25a6666f6c07c6ac8449a63d7fbce0dfd29c54cd---/home/xu/SoftwarePatch/judged/positives/libav.libav/25a6666f6c07c6ac8449a63d7fbce0dfd29c54cd
+/home/xu/SoftwarePatch/judged/positives/libav.libav.7207dd8f829baee58b4df6c97c19ffde77039e8d
+/home/xu/SoftwarePatch/judged/positives/libav.libav/7207dd8f829baee58b4df6c97c19ffde77039e8d/patch_info.txt
+Patched information:7207dd8f829baee58b4df6c97c19ffde77039e8d---/home/xu/SoftwarePatch/judged/positives/libav.libav/7207dd8f829baee58b4df6c97c19ffde77039e8d
+/home/xu/SoftwarePatch/judged/positives/libav.libav.364ec9dcb6760ae86b1efb418f6cab16cd629da1
+/home/xu/SoftwarePatch/judged/positives/libav.libav/364ec9dcb6760ae86b1efb418f6cab16cd629da1/patch_info.txt
+Patched information:364ec9dcb6760ae86b1efb418f6cab16cd629da1---/home/xu/SoftwarePatch/judged/positives/libav.libav/364ec9dcb6760ae86b1efb418f6cab16cd629da1
+/home/xu/SoftwarePatch/judged/positives/libav.libav.68fd077f68bdde864bb7328d72a040849c616261
+/home/xu/SoftwarePatch/judged/positives/libav.libav/68fd077f68bdde864bb7328d72a040849c616261/patch_info.txt
+Patched information:68fd077f68bdde864bb7328d72a040849c616261---/home/xu/SoftwarePatch/judged/positives/libav.libav/68fd077f68bdde864bb7328d72a040849c616261
+/home/xu/SoftwarePatch/judged/positives/libav.libav.e3ec60d82a853a4de5568bfadcd72e3984095148
+/home/xu/SoftwarePatch/judged/positives/libav.libav/e3ec60d82a853a4de5568bfadcd72e3984095148/patch_info.txt
+Patched information:e3ec60d82a853a4de5568bfadcd72e3984095148---/home/xu/SoftwarePatch/judged/positives/libav.libav/e3ec60d82a853a4de5568bfadcd72e3984095148
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6308cd4868d2bd5fdf8bfa8dd10856c9a91874f5
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6308cd4868d2bd5fdf8bfa8dd10856c9a91874f5/patch_info.txt
+Patched information:6308cd4868d2bd5fdf8bfa8dd10856c9a91874f5---/home/xu/SoftwarePatch/judged/positives/libav.libav/6308cd4868d2bd5fdf8bfa8dd10856c9a91874f5
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.a080c3e816e923680e57e647b5cbc3896e8e8106
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a080c3e816e923680e57e647b5cbc3896e8e8106/patch_info.txt
+Patched information:a080c3e816e923680e57e647b5cbc3896e8e8106---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a080c3e816e923680e57e647b5cbc3896e8e8106
+/home/xu/SoftwarePatch/judged/positives/libav.libav.64b164f44abc232dbb125b36e2d00b54e1531ba7
+/home/xu/SoftwarePatch/judged/positives/libav.libav/64b164f44abc232dbb125b36e2d00b54e1531ba7/patch_info.txt
+Patched information:64b164f44abc232dbb125b36e2d00b54e1531ba7---/home/xu/SoftwarePatch/judged/positives/libav.libav/64b164f44abc232dbb125b36e2d00b54e1531ba7
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0e0538aefc75958ded49f5d075c99a81cf6b2bbb
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0e0538aefc75958ded49f5d075c99a81cf6b2bbb/patch_info.txt
+Patched information:0e0538aefc75958ded49f5d075c99a81cf6b2bbb---/home/xu/SoftwarePatch/judged/positives/libav.libav/0e0538aefc75958ded49f5d075c99a81cf6b2bbb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.771e0c6c7a7f738a31b5015c1cabb867dcbb80c1
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/771e0c6c7a7f738a31b5015c1cabb867dcbb80c1/patch_info.txt
+Patched information:771e0c6c7a7f738a31b5015c1cabb867dcbb80c1---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/771e0c6c7a7f738a31b5015c1cabb867dcbb80c1
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.787e9929652e5f1e7e7cf9f7df4e8613a1d84ea9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/787e9929652e5f1e7e7cf9f7df4e8613a1d84ea9/patch_info.txt
+Patched information:787e9929652e5f1e7e7cf9f7df4e8613a1d84ea9---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/787e9929652e5f1e7e7cf9f7df4e8613a1d84ea9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.2b61034b0b2b1a2009dab47c72438a73c5c2d9e6
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/2b61034b0b2b1a2009dab47c72438a73c5c2d9e6/patch_info.txt
+Patched information:2b61034b0b2b1a2009dab47c72438a73c5c2d9e6---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/2b61034b0b2b1a2009dab47c72438a73c5c2d9e6
+/home/xu/SoftwarePatch/judged/positives/libav.libav.cd818b3a5709b9b08bd5901cb8863a8b61be265e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/cd818b3a5709b9b08bd5901cb8863a8b61be265e/patch_info.txt
+Patched information:cd818b3a5709b9b08bd5901cb8863a8b61be265e---/home/xu/SoftwarePatch/judged/positives/libav.libav/cd818b3a5709b9b08bd5901cb8863a8b61be265e
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.f9e6fac357a42cdcc1b838582825aedad7c920e4
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f9e6fac357a42cdcc1b838582825aedad7c920e4/patch_info.txt
+Patched information:f9e6fac357a42cdcc1b838582825aedad7c920e4---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f9e6fac357a42cdcc1b838582825aedad7c920e4
+/home/xu/SoftwarePatch/judged/positives/libav.libav.d0f6ab0298f2309c6104626787ed73416298b019
+/home/xu/SoftwarePatch/judged/positives/libav.libav/d0f6ab0298f2309c6104626787ed73416298b019/patch_info.txt
+Patched information:d0f6ab0298f2309c6104626787ed73416298b019---/home/xu/SoftwarePatch/judged/positives/libav.libav/d0f6ab0298f2309c6104626787ed73416298b019
+/home/xu/SoftwarePatch/judged/positives/libav.libav.a4fec9a7eab842ea5eea1b1ee98624356cb31422
+/home/xu/SoftwarePatch/judged/positives/libav.libav/a4fec9a7eab842ea5eea1b1ee98624356cb31422/patch_info.txt
+Patched information:a4fec9a7eab842ea5eea1b1ee98624356cb31422---/home/xu/SoftwarePatch/judged/positives/libav.libav/a4fec9a7eab842ea5eea1b1ee98624356cb31422
+/home/xu/SoftwarePatch/judged/positives/libav.libav.79964745b3ed5a700f4f0dda56c7360497328c88
+/home/xu/SoftwarePatch/judged/positives/libav.libav/79964745b3ed5a700f4f0dda56c7360497328c88/patch_info.txt
+Patched information:79964745b3ed5a700f4f0dda56c7360497328c88---/home/xu/SoftwarePatch/judged/positives/libav.libav/79964745b3ed5a700f4f0dda56c7360497328c88
+/home/xu/SoftwarePatch/judged/positives/libav.libav.5388f0b479c56179d566c49afd8765fefef4a18e
+/home/xu/SoftwarePatch/judged/positives/libav.libav/5388f0b479c56179d566c49afd8765fefef4a18e/patch_info.txt
+Patched information:5388f0b479c56179d566c49afd8765fefef4a18e---/home/xu/SoftwarePatch/judged/positives/libav.libav/5388f0b479c56179d566c49afd8765fefef4a18e
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.82e8372f172e3893c43ef67d99ca114cefe8db3c
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/82e8372f172e3893c43ef67d99ca114cefe8db3c/patch_info.txt
+Patched information:82e8372f172e3893c43ef67d99ca114cefe8db3c---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/82e8372f172e3893c43ef67d99ca114cefe8db3c
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6654296c309a60ce803b7e1c70edfd3ea09ee8c0
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6654296c309a60ce803b7e1c70edfd3ea09ee8c0/patch_info.txt
+Patched information:6654296c309a60ce803b7e1c70edfd3ea09ee8c0---/home/xu/SoftwarePatch/judged/positives/libav.libav/6654296c309a60ce803b7e1c70edfd3ea09ee8c0
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.09f06923e636019c39c807cb59c481375e720556
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/09f06923e636019c39c807cb59c481375e720556/patch_info.txt
+Patched information:09f06923e636019c39c807cb59c481375e720556---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/09f06923e636019c39c807cb59c481375e720556
+/home/xu/SoftwarePatch/judged/positives/libav.libav.aa5d6be8dff77660dc620f04a0cd655caf294fc1
+/home/xu/SoftwarePatch/judged/positives/libav.libav/aa5d6be8dff77660dc620f04a0cd655caf294fc1/patch_info.txt
+Patched information:aa5d6be8dff77660dc620f04a0cd655caf294fc1---/home/xu/SoftwarePatch/judged/positives/libav.libav/aa5d6be8dff77660dc620f04a0cd655caf294fc1
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.103b171d8fc282ef435f8de9afbf7782e312961f
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/103b171d8fc282ef435f8de9afbf7782e312961f/patch_info.txt
+Patched information:103b171d8fc282ef435f8de9afbf7782e312961f---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/103b171d8fc282ef435f8de9afbf7782e312961f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.eab5168cd345a5ce0001036690daac7767062aa1
+/home/xu/SoftwarePatch/judged/positives/libav.libav/eab5168cd345a5ce0001036690daac7767062aa1/patch_info.txt
+Patched information:eab5168cd345a5ce0001036690daac7767062aa1---/home/xu/SoftwarePatch/judged/positives/libav.libav/eab5168cd345a5ce0001036690daac7767062aa1
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c74032b7a8756caee8ce2c3a1b874952ba888018
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c74032b7a8756caee8ce2c3a1b874952ba888018/patch_info.txt
+Patched information:c74032b7a8756caee8ce2c3a1b874952ba888018---/home/xu/SoftwarePatch/judged/positives/libav.libav/c74032b7a8756caee8ce2c3a1b874952ba888018
+/home/xu/SoftwarePatch/judged/positives/libav.libav.768eb9182e94a94bc2ef46f565a0dac7afef3b57
+/home/xu/SoftwarePatch/judged/positives/libav.libav/768eb9182e94a94bc2ef46f565a0dac7afef3b57/patch_info.txt
+Patched information:768eb9182e94a94bc2ef46f565a0dac7afef3b57---/home/xu/SoftwarePatch/judged/positives/libav.libav/768eb9182e94a94bc2ef46f565a0dac7afef3b57
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.f49baeff50d0be9c8d86aed6fb4a08841aa3da41
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f49baeff50d0be9c8d86aed6fb4a08841aa3da41/patch_info.txt
+Patched information:f49baeff50d0be9c8d86aed6fb4a08841aa3da41---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f49baeff50d0be9c8d86aed6fb4a08841aa3da41
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0872bb23b4bd2d94a8ba91070f706d1bc1c3ced8
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0872bb23b4bd2d94a8ba91070f706d1bc1c3ced8/patch_info.txt
+Patched information:0872bb23b4bd2d94a8ba91070f706d1bc1c3ced8---/home/xu/SoftwarePatch/judged/positives/libav.libav/0872bb23b4bd2d94a8ba91070f706d1bc1c3ced8
+/home/xu/SoftwarePatch/judged/positives/libav.libav.f5475e1b38a37c6da2e26097242cf82a2b1a9ee9
+/home/xu/SoftwarePatch/judged/positives/libav.libav/f5475e1b38a37c6da2e26097242cf82a2b1a9ee9/patch_info.txt
+Patched information:f5475e1b38a37c6da2e26097242cf82a2b1a9ee9---/home/xu/SoftwarePatch/judged/positives/libav.libav/f5475e1b38a37c6da2e26097242cf82a2b1a9ee9
+/home/xu/SoftwarePatch/judged/positives/libav.libav.f2953365d1c1da8c1e586270c6eb2c7437c77a9f
+/home/xu/SoftwarePatch/judged/positives/libav.libav/f2953365d1c1da8c1e586270c6eb2c7437c77a9f/patch_info.txt
+Patched information:f2953365d1c1da8c1e586270c6eb2c7437c77a9f---/home/xu/SoftwarePatch/judged/positives/libav.libav/f2953365d1c1da8c1e586270c6eb2c7437c77a9f
+/home/xu/SoftwarePatch/judged/positives/libav.libav.dbc53ffc7c398f90ae1cf59e513d3882bc0dc188
+/home/xu/SoftwarePatch/judged/positives/libav.libav/dbc53ffc7c398f90ae1cf59e513d3882bc0dc188/patch_info.txt
+Patched information:dbc53ffc7c398f90ae1cf59e513d3882bc0dc188---/home/xu/SoftwarePatch/judged/positives/libav.libav/dbc53ffc7c398f90ae1cf59e513d3882bc0dc188
+/home/xu/SoftwarePatch/judged/positives/libav.libav.a246cefa75aed2ade315d6d09068aacb6b0fe76b
+/home/xu/SoftwarePatch/judged/positives/libav.libav/a246cefa75aed2ade315d6d09068aacb6b0fe76b/patch_info.txt
+Patched information:a246cefa75aed2ade315d6d09068aacb6b0fe76b---/home/xu/SoftwarePatch/judged/positives/libav.libav/a246cefa75aed2ade315d6d09068aacb6b0fe76b
+/home/xu/SoftwarePatch/judged/positives/libav.libav.5eb901cfec4a1bca4d961c6eb6889a91a87031ca
+/home/xu/SoftwarePatch/judged/positives/libav.libav/5eb901cfec4a1bca4d961c6eb6889a91a87031ca/patch_info.txt
+Patched information:5eb901cfec4a1bca4d961c6eb6889a91a87031ca---/home/xu/SoftwarePatch/judged/positives/libav.libav/5eb901cfec4a1bca4d961c6eb6889a91a87031ca
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.a1673e1536729d49cb758b988ac7be368e9b1fdb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a1673e1536729d49cb758b988ac7be368e9b1fdb/patch_info.txt
+Patched information:a1673e1536729d49cb758b988ac7be368e9b1fdb---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/a1673e1536729d49cb758b988ac7be368e9b1fdb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.48c054fec3506417b2598837b8062aae7114c200
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/48c054fec3506417b2598837b8062aae7114c200/patch_info.txt
+Patched information:48c054fec3506417b2598837b8062aae7114c200---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/48c054fec3506417b2598837b8062aae7114c200
+/home/xu/SoftwarePatch/judged/positives/libav.libav.3623589edc7b1257bb45aa9e52c9631e133f22b6
+/home/xu/SoftwarePatch/judged/positives/libav.libav/3623589edc7b1257bb45aa9e52c9631e133f22b6/patch_info.txt
+Patched information:3623589edc7b1257bb45aa9e52c9631e133f22b6---/home/xu/SoftwarePatch/judged/positives/libav.libav/3623589edc7b1257bb45aa9e52c9631e133f22b6
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.241e2dc9362b8d36847c0df00c24e0199234c7c6
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/241e2dc9362b8d36847c0df00c24e0199234c7c6/patch_info.txt
+Patched information:241e2dc9362b8d36847c0df00c24e0199234c7c6---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/241e2dc9362b8d36847c0df00c24e0199234c7c6
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c351524c9e7f90be8e11eccc7bac405505e4bb76
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c351524c9e7f90be8e11eccc7bac405505e4bb76/patch_info.txt
+Patched information:c351524c9e7f90be8e11eccc7bac405505e4bb76---/home/xu/SoftwarePatch/judged/positives/libav.libav/c351524c9e7f90be8e11eccc7bac405505e4bb76
+/home/xu/SoftwarePatch/judged/positives/libav.libav.a4cb675124a906126ba4ab307f0c17716f6d9adb
+/home/xu/SoftwarePatch/judged/positives/libav.libav/a4cb675124a906126ba4ab307f0c17716f6d9adb/patch_info.txt
+Patched information:a4cb675124a906126ba4ab307f0c17716f6d9adb---/home/xu/SoftwarePatch/judged/positives/libav.libav/a4cb675124a906126ba4ab307f0c17716f6d9adb
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.61e72d761c945e128ca13599a98a187ac23650dd
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/61e72d761c945e128ca13599a98a187ac23650dd/patch_info.txt
+Patched information:61e72d761c945e128ca13599a98a187ac23650dd---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/61e72d761c945e128ca13599a98a187ac23650dd
+/home/xu/SoftwarePatch/judged/positives/libav.libav.c1d1ef4ecd9c4f1ca01c8149c7e57c14968ca588
+/home/xu/SoftwarePatch/judged/positives/libav.libav/c1d1ef4ecd9c4f1ca01c8149c7e57c14968ca588/patch_info.txt
+Patched information:c1d1ef4ecd9c4f1ca01c8149c7e57c14968ca588---/home/xu/SoftwarePatch/judged/positives/libav.libav/c1d1ef4ecd9c4f1ca01c8149c7e57c14968ca588
+/home/xu/SoftwarePatch/judged/positives/libav.libav.b99ca863506f0630514921b740b78364de67a3ff
+/home/xu/SoftwarePatch/judged/positives/libav.libav/b99ca863506f0630514921b740b78364de67a3ff/patch_info.txt
+Patched information:b99ca863506f0630514921b740b78364de67a3ff---/home/xu/SoftwarePatch/judged/positives/libav.libav/b99ca863506f0630514921b740b78364de67a3ff
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.f84a648ca1da0177e7ed1d4b50312c5dd6a2c0c8
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f84a648ca1da0177e7ed1d4b50312c5dd6a2c0c8/patch_info.txt
+Patched information:f84a648ca1da0177e7ed1d4b50312c5dd6a2c0c8---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/f84a648ca1da0177e7ed1d4b50312c5dd6a2c0c8
+/home/xu/SoftwarePatch/judged/positives/libav.libav.69b8d83ecf5f6deb9ad94bdaa816aa205430d3e9
+/home/xu/SoftwarePatch/judged/positives/libav.libav/69b8d83ecf5f6deb9ad94bdaa816aa205430d3e9/patch_info.txt
+Patched information:69b8d83ecf5f6deb9ad94bdaa816aa205430d3e9---/home/xu/SoftwarePatch/judged/positives/libav.libav/69b8d83ecf5f6deb9ad94bdaa816aa205430d3e9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.361d18a20836b790e6ffebaf8f7223f686811290
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/361d18a20836b790e6ffebaf8f7223f686811290/patch_info.txt
+Patched information:361d18a20836b790e6ffebaf8f7223f686811290---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/361d18a20836b790e6ffebaf8f7223f686811290
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl.398e99fe5e06edb11f55a39ce0883d9aa633ffa9
+/home/xu/SoftwarePatch/judged/positives/openssl.openssl/398e99fe5e06edb11f55a39ce0883d9aa633ffa9/patch_info.txt
+Patched information:398e99fe5e06edb11f55a39ce0883d9aa633ffa9---/home/xu/SoftwarePatch/judged/positives/openssl.openssl/398e99fe5e06edb11f55a39ce0883d9aa633ffa9
+/home/xu/SoftwarePatch/judged/positives/libav.libav.e245d4f45ca5e2b97daef5944d63323c07d545bc
+/home/xu/SoftwarePatch/judged/positives/libav.libav/e245d4f45ca5e2b97daef5944d63323c07d545bc/patch_info.txt
+Patched information:e245d4f45ca5e2b97daef5944d63323c07d545bc---/home/xu/SoftwarePatch/judged/positives/libav.libav/e245d4f45ca5e2b97daef5944d63323c07d545bc
+/home/xu/SoftwarePatch/judged/positives/libav.libav.0ca4414d0f3eeb39bbad504eaaae76d40b7189cc
+/home/xu/SoftwarePatch/judged/positives/libav.libav/0ca4414d0f3eeb39bbad504eaaae76d40b7189cc/patch_info.txt
+Patched information:0ca4414d0f3eeb39bbad504eaaae76d40b7189cc---/home/xu/SoftwarePatch/judged/positives/libav.libav/0ca4414d0f3eeb39bbad504eaaae76d40b7189cc
+/home/xu/SoftwarePatch/judged/positives/libav.libav.6d1feb028f5e245477da71848e702388dca91ce0
+/home/xu/SoftwarePatch/judged/positives/libav.libav/6d1feb028f5e245477da71848e702388dca91ce0/patch_info.txt
+Patched information:6d1feb028f5e245477da71848e702388dca91ce0---/home/xu/SoftwarePatch/judged/positives/libav.libav/6d1feb028f5e245477da71848e702388dca91ce0
+/home/xu/SoftwarePatch/judged/positives/libav.libav.aa926a480f2f84a87dc1fbf42d40fe23bae82ae1
+/home/xu/SoftwarePatch/judged/positives/libav.libav/aa926a480f2f84a87dc1fbf42d40fe23bae82ae1/patch_info.txt
+Patched information:aa926a480f2f84a87dc1fbf42d40fe23bae82ae1---/home/xu/SoftwarePatch/judged/positives/libav.libav/aa926a480f2f84a87dc1fbf42d40fe23bae82ae1
+/home/xu/SoftwarePatch/judged/positives/libav.libav.887d31d455915b6bde6814063384dafdee61164c
+/home/xu/SoftwarePatch/judged/positives/libav.libav/887d31d455915b6bde6814063384dafdee61164c/patch_info.txt
+Patched information:887d31d455915b6bde6814063384dafdee61164c---/home/xu/SoftwarePatch/judged/positives/libav.libav/887d31d455915b6bde6814063384dafdee61164c
