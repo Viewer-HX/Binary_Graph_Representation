@@ -1,8 +1,6 @@
 # Binary Graph Representation
 
-This project will generate format subgraph information, according to commit message.  
-
-The generated subgraph could be used for further GNN based detection.
+This repo is a part of project [BinGo](https://github.com/Viewer-HX/BinGo). This repo contains code that generates format subgraph information according to commit message. The generated subgraph could be used for further GNN model to detect secure and nonsecure patches.
 
 ## Operating Environment Requirements:
 - The installation of Docker environment, please refer [Docker Installation](https://docs.docker.com/engine/install/ubuntu/);
